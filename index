@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball English Verb Training</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #ff6b00;
+            --color-secondary: #4361ee;
+            --color-background: #0a0e21;
+            --color-success: #06d6a0;
+            --color-warning: #ffd166;
+            --color-danger: #ef476f;
+            --color-text-light: #f8f9fa;
+            --color-text-dark: #212529;
+        }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: theme(--color-background);
+            background-image: url('https://wallpapercave.com/wp/wp2632531.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: theme(--color-text-light);
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .game-title {
+            font-family: 'Bangers', cursive;
+            text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            letter-spacing: 2px;
+        }
+        .progress-bar-bg {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(67, 97, 238, 0.7);
+        }
+        .progress-bar-fill {
+            background: linear-gradient(90deg, #4361ee 0%, #ff6b00 100%);
+            box-shadow: 0 0 10px #ff6b00;
+        }
+        .game-card {
+            background: rgba(16, 20, 40, 0.85);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4px);
+            transition: all 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(67, 97, 238, 0.4);
+            border-color: theme(--color-primary);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, theme(--color-primary), #ff9e00);
+            border: none;
+            box-shadow: 0 4px 6px rgba(255, 107, 0, 0.3);
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(255, 107, 0, 0.5);
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, theme(--color-secondary), #6690ff);
+            border: none;
+            box-shadow: 0 4px 6px rgba(67, 97, 238, 0.3);
+            transition: all 0.2s ease;
+        }
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(67, 97, 238, 0.5);
+        }
+        .game-mode-card {
+            background: rgba(16, 20, 40, 0.9);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .game-mode-card.active, .game-mode-card:hover {
+            border-color: theme(--color-primary);
+            box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+        }
+        .level-button {
+            background: rgba(30, 30, 60, 0.8);
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .level-button.active, .level-button:hover:not(.locked) {
+            background: rgba(67, 97, 238, 0.5);
+            transform: translateY(-2px);
+        }
+        .level-button.locked {
+            background: rgba(30, 30, 60, 0.4);
+            color: #666;
+            cursor: not-allowed;
+        }
+        .level-button.locked::after {
+            content: "🔒";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+        .tips-container {
+            background: rgba(10, 14, 33, 0.9);
+            border-left: 4px solid theme(--color-warning);
+        }
+        .game-container {
+            min-height: 400px;
+        }
+        .boss-health-bar {
+            height: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+        }
+        .boss-health-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ef476f 0%, #ff6b00 100%);
+            transition: width 0.5s ease;
+        }
+        .power-meter {
+            height: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        .power-meter-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3a86ff 0%, #8338ec 50%, #ff006e 100%);
+            transition: width 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255, 0, 110, 0.7);
+        }
+        .achievement-badge {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ffd166, #ffb347);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 15px rgba(255, 209, 102, 0.5);
+        }
+        .achievement-badge::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 30px;
+            height: 30px;
+            background: #ef476f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: white;
+            border: 2px solid white;
+        }
+        .achievement-badge.new::after {
+            content: "NEW";
+            font-size: 0.5rem;
+        }
+        .shake {
+            animation: shake 0.5s ease-in-out;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        .flash {
+            animation: flash 0.5s ease-in-out;
+        }
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .bounce {
+            animation: bounce 0.5s ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .kamehameha {
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background: linear-gradient(90deg, rgba(58, 134, 255, 0.8), rgba(58, 134, 255, 0.3));
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(58, 134, 255, 0.8);
+            transform-origin: left center;
+            transform: scaleX(0);
+            z-index: 10;
+        }
+        .power-up {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 214, 0, 0.5) 0%, rgba(255, 214, 0, 0) 70%);
+            opacity: 0;
+            z-index: 5;
+        }
+        .character-selection {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+        .character-card {
+            background: rgba(16, 20, 40, 0.7);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .character-card:hover, .character-card.selected {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4);
+            border-color: theme(--color-primary);
+        }
+        .character-card.selected::after {
+            content: "✓";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            background: theme(--color-success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            border: 2px solid white;
+        }
+        .trophy-case {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 1rem;
+        }
+        .trophy {
+            background: rgba(16, 20, 40, 0.5);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .trophy:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+        }
+        .trophy .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .trophy.locked {
+            filter: grayscale(100%);
+            opacity: 0.6;
+        }
+        .trophy.locked .icon::after {
+            content: "🔒";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+        }
+        .daily-challenge {
+            background: linear-gradient(135deg, rgba(131, 56, 236, 0.8), rgba(255, 0, 110, 0.8));
+            border-radius: 12px;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .daily-challenge::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.1) 10px,
+                rgba(255, 255, 255, 0) 10px,
+                rgba(255, 255, 255, 0) 20px
+            );
+            animation: move-stripes 20s linear infinite;
+            z-index: 1;
+        }
+        @keyframes move-stripes {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        .daily-challenge-content {
+            position: relative;
+            z-index: 2;
+        }
+        .daily-challenge-timer {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: bold;
+        }
+        .memorama-card {
+            perspective: 1000px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .memorama-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .memorama-card.flipped .memorama-card-inner {
+            transform: rotateY(180deg);
+        }
+        .memorama-card-front, .memorama-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+        }
+        .memorama-card-front {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            transform: rotateY(180deg);
+        }
+        .memorama-card-back {
+            background: url('https://wallpaperaccess.com/full/2703791.png') center/cover;
+        }
+        .powerup-item {
+            background: rgba(16, 20, 40, 0.7);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0.75rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .powerup-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(58, 134, 255, 0.4);
+            border-color: #3a86ff;
+        }
+        .powerup-item .count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ef476f;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border: 2px solid white;
+        }
+        /* New styles for the conjugation game */
+        .conjugation-card {
+            background: rgba(16, 20, 40, 0.8);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .conjugation-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .conjugation-input:focus {
+            outline: none;
+            border-color: theme(--color-primary);
+            box-shadow: 0 0 8px rgba(255, 107, 0, 0.5);
+        }
+        /* New styles for sentences game */
+        .sentence-container {
+            background: rgba(16, 20, 40, 0.8);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .sentence-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            padding: 8px 12px;
+            color: white;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        .sentence-input:focus {
+            outline: none;
+            border-color: theme(--color-primary);
+            box-shadow: 0 0 8px rgba(255, 107, 0, 0.5);
+        }
+        /* New styles for memorama game */
+        .memorama-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        /* New styles for word search game */
+        .sopa-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 0.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .sopa-letter {
+            background: rgba(67, 97, 238, 0.2);
+            border: 1px solid rgba(67, 97, 238, 0.5);
+            border-radius: 4px;
+            width: 100%;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .sopa-letter:hover {
+            background: rgba(67, 97, 238, 0.4);
+        }
+        .sopa-letter.selected {
+            background: rgba(255, 107, 0, 0.6);
+            border-color: rgba(255, 107, 0, 1);
+        }
+        .sopa-letter.found {
+            background: rgba(6, 214, 160, 0.6);
+            border-color: rgba(6, 214, 160, 1);
+        }
+        /* New styles for crossword game */
+        .crossword-cell {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            width: 100%;
+            aspect-ratio: 1;
+            position: relative;
+        }
+        .crossword-cell.active {
+            background: rgba(255, 107, 0, 0.3);
+            border-color: rgba(255, 107, 0, 1);
+        }
+        .crossword-cell.filled {
+            background: rgba(67, 97, 238, 0.2);
+        }
+        .crossword-cell-number {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            font-size: 0.65rem;
+            font-weight: bold;
+        }
+        /* New styles for roulette game */
+        .roulette-wheel {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto 2rem;
+            background: conic-gradient(
+                #ef476f 0deg 45deg,
+                #ffd166 45deg 90deg,
+                #06d6a0 90deg 135deg,
+                #118ab2 135deg 180deg,
+                #073b4c 180deg 225deg,
+                #7209b7 225deg 270deg,
+                #3a0ca3 270deg 315deg,
+                #4361ee 315deg 360deg
+            );
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .roulette-wheel::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .roulette-pointer {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid #ef476f;
+            z-index: 1;
+        }
+        .pulse {
+            animation: pulse 1.5s ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        /* Style for damaged boss */
+        .damaged {
+            animation: damage 0.5s ease-in-out;
+        }
+        @keyframes damage {
+            0%, 100% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.05); filter: brightness(1.5) sepia(1) hue-rotate(-30deg); }
+        }
+        .attacking {
+            animation: attack 0.5s ease-in-out;
+        }
+        @keyframes attack {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-15px); }
+        }
+        /* Help page styles */
+        .help-section {
+            background: rgba(16, 20, 40, 0.7);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .help-title {
+            font-weight: bold;
+            color: theme(--color-warning);
+            margin-bottom: 0.5rem;
+        }
+        /* Style for floating help button */
+        .floating-help-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: theme(--color-secondary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .floating-help-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="game-title text-5xl md:text-6xl text-yellow-400 mb-2">Dragon Ball Verb Training</h1>
+            <p class="text-xl text-blue-300">Master English verbs and become the strongest warrior!</p>
+            
+            <!-- XP Progress Bar -->
+            <div class="mt-6 max-w-xl mx-auto">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-lg font-bold">XP Progress</span>
+                    <span class="text-lg font-bold" id="xp-counter">0/500 XP</span>
+                </div>
+                <div class="progress-bar-bg h-8 rounded-full overflow-hidden">
+                    <div id="xp-progress-bar" class="progress-bar-fill h-full w-0 rounded-full transition-all duration-700 ease-out" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <!-- User Profile Button (New) -->
+            <div class="mt-4 flex justify-end">
+                <button id="profile-button" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-2 flex items-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <span class="ml-2 mr-1">Mi Perfil</span>
+                </button>
+            </div>
+        </header>
+        
+        <!-- Game Mode Selection -->
+        <div id="game-mode-selection" class="mb-10">
+            <h2 class="text-3xl font-bold mb-6 text-center">Select Your Training Mode</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Easy Mode -->
+                <div class="game-mode-card rounded-lg p-6 text-center active" data-mode="easy">
+                    <div class="relative">
+                        <img src="https://www.pngmart.com/files/17/Dragon-Ball-Super-Goku-PNG-Photos.png" alt="Easy Mode" class="w-24 h-24 mx-auto mb-3">
+                        <div class="absolute top-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded-full">Easy</div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Regular Verbs</h3>
+                    <p class="text-sm text-gray-300 mb-4">Levels 1-10: Practice with the 100 most common regular verbs.</p>
+                    <button class="btn-primary px-6 py-2 rounded-full text-white font-bold">Start Training</button>
+                </div>
+                
+                <!-- Medium Mode -->
+                <div class="game-mode-card rounded-lg p-6 text-center" data-mode="medium">
+                    <div class="relative">
+                        <img src="https://www.pngmart.com/files/13/Vegeta-PNG-HD.png" alt="Medium Mode" class="w-24 h-24 mx-auto mb-3">
+                        <div class="absolute top-0 right-0 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full">Medium</div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Irregular Verbs</h3>
+                    <p class="text-sm text-gray-300 mb-4">Levels 11-25: Master at least 100 irregular English verbs.</p>
+                    <button class="btn-primary px-6 py-2 rounded-full text-white font-bold">Unlock at Level 10</button>
+                </div>
+                
+                <!-- Hard Mode -->
+                <div class="game-mode-card rounded-lg p-6 text-center" data-mode="hard">
+                    <div class="relative">
+                        <img src="https://www.pngmart.com/files/13/Gohan-PNG-Transparent-Image.png" alt="Hard Mode" class="w-24 h-24 mx-auto mb-3">
+                        <div class="absolute top-0 right-0 bg-red-500 text-white text-xs px-2 py-1 rounded-full">Hard</div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Phrasal & Continuous</h3>
+                    <p class="text-sm text-gray-300 mb-4">Levels 26-60: Challenge yourself with phrasal verbs and continuous tenses.</p>
+                    <button class="btn-primary px-6 py-2 rounded-full text-white font-bold">Unlock at Level 25</button>
+                </div>
+            </div>
+            
+            <!-- Daily Challenge (New) -->
+            <div class="daily-challenge mt-8">
+                <div class="daily-challenge-timer">23:45:30</div>
+                <div class="daily-challenge-content">
+                    <h3 class="text-2xl font-bold mb-2">Daily Challenge</h3>
+                    <p class="mb-4">Complete today's special training for bonus rewards!</p>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-white bg-opacity-20 rounded-lg p-2 mr-3">
+                            <span class="text-2xl">🏆</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Super Saiyan Challenge</h4>
+                            <p class="text-sm">Complete 3 games with perfect scores</p>
+                        </div>
+                    </div>
+                    <button class="bg-white text-purple-800 font-bold py-2 px-6 rounded-full hover:bg-opacity-90 transition">Start Challenge</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Level Selection -->
+        <div id="level-selection" class="mb-10 hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold">Regular Verbs Training</h2>
+                <button id="back-to-modes" class="btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">← Back to Modes</button>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <!-- Level 1 -->
+                <div class="level-button active rounded-lg p-4 text-center cursor-pointer" data-level="1">
+                    <h3 class="text-xl font-bold mb-1">Level 1</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-green-500 text-white rounded-full px-2 py-1">Present Simple</div>
+                </div>
+                
+                <!-- Level 2 (Locked) -->
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="2">
+                    <h3 class="text-xl font-bold mb-1">Level 2</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-blue-500 text-white rounded-full px-2 py-1">Past Simple</div>
+                </div>
+                
+                <!-- Levels 3-10 (Locked) -->
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="3">
+                    <h3 class="text-xl font-bold mb-1">Level 3</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-purple-500 text-white rounded-full px-2 py-1">Future Simple</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="4">
+                    <h3 class="text-xl font-bold mb-1">Level 4</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-indigo-500 text-white rounded-full px-2 py-1">Present Perfect</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="5">
+                    <h3 class="text-xl font-bold mb-1">Level 5</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-pink-500 text-white rounded-full px-2 py-1">Mixed Tenses</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="6">
+                    <h3 class="text-xl font-bold mb-1">Level 6</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-yellow-500 text-white rounded-full px-2 py-1">Past Perfect</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="7">
+                    <h3 class="text-xl font-bold mb-1">Level 7</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-red-500 text-white rounded-full px-2 py-1">Conditionals</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="8">
+                    <h3 class="text-xl font-bold mb-1">Level 8</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-green-500 text-white rounded-full px-2 py-1">Mixed Tenses</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="9">
+                    <h3 class="text-xl font-bold mb-1">Level 9</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-blue-500 text-white rounded-full px-2 py-1">All Tenses</div>
+                </div>
+                
+                <div class="level-button locked rounded-lg p-4 text-center" data-level="10">
+                    <h3 class="text-xl font-bold mb-1">Level 10</h3>
+                    <div class="text-sm text-gray-300">10 regular verbs</div>
+                    <div class="mt-2 text-xs bg-purple-500 text-white rounded-full px-2 py-1">Master Level</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pre-game Tips (Trigger PreGameTips Loop) -->
+        <div id="pre-game-tips" class="mb-10 hidden">
+            <div class="tips-container rounded-lg p-6">
+                <h2 class="text-2xl font-bold mb-4">Training Tips: Level 1</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg">
+                        <h3 class="text-xl font-bold mb-2">Tip #1: Tense Focus</h3>
+                        <p>In this level, you'll practice <span class="text-yellow-300 font-bold">Present Simple</span> forms of regular verbs.</p>
+                    </div>
+                    <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg">
+                        <h3 class="text-xl font-bold mb-2">Tip #2: Verb List</h3>
+                        <p>You'll be working with these verbs: <span class="text-yellow-300">walk, talk, play, work, look, want, need, help, study, ask</span></p>
+                    </div>
+                    <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg">
+                        <h3 class="text-xl font-bold mb-2">Tip #3: Quick Rule</h3>
+                        <p>Remember: add <span class="text-yellow-300">-s</span> or <span class="text-yellow-300">-es</span> to the base form for third person singular (he/she/it).</p>
+                    </div>
+                </div>
+                
+                <!-- Character Selection (New) -->
+                <div class="mt-6">
+                    <h3 class="text-xl font-bold mb-4">Choose Your Character:</h3>
+                    <div class="character-selection">
+                        <div class="character-card relative selected">
+                            <img src="https://www.pngmart.com/files/3/Dragon-Ball-Goku-Transparent-PNG.png" alt="Goku" class="w-16 h-16 mx-auto mb-2">
+                            <p class="font-bold">Goku</p>
+                        </div>
+                        <div class="character-card relative">
+                            <img src="https://www.pngmart.com/files/13/Vegeta-PNG-HD.png" alt="Vegeta" class="w-16 h-16 mx-auto mb-2">
+                            <p class="font-bold">Vegeta</p>
+                        </div>
+                        <div class="character-card relative">
+                            <img src="https://www.pngmart.com/files/13/Gohan-PNG-Transparent-Image.png" alt="Gohan" class="w-16 h-16 mx-auto mb-2">
+                            <p class="font-bold">Gohan</p>
+                        </div>
+                        <div class="character-card relative">
+                            <img src="https://www.pngmart.com/files/13/Piccolo-PNG-Free-Download.png" alt="Piccolo" class="w-16 h-16 mx-auto mb-2">
+                            <p class="font-bold">Piccolo</p>
+                        </div>
+                        <div class="character-card relative">
+                            <img src="https://www.pngmart.com/files/13/Trunks-PNG-Pic.png" alt="Trunks" class="w-16 h-16 mx-auto mb-2">
+                            <p class="font-bold">Trunks</p>
+                        </div>
+                        <div class="character-card relative locked">
+                            <img src="https://www.pngmart.com/files/22/Beerus-PNG-Photo.png" alt="Beerus" class="w-16 h-16 mx-auto mb-2 opacity-60">
+                            <p class="font-bold">Beerus</p>
+                            <div class="absolute bottom-1 right-1 text-xs text-gray-400">Lvl 15+</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-6">
+                    <button id="start-games" class="btn-primary px-8 py-3 rounded-full text-white font-bold text-lg">Start Training Now!</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mini-games Container -->
+        <div id="games-container" class="mb-10 hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold">Level 1: Training Games</h2>
+                <button id="back-to-levels" class="btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">← Back to Levels</button>
+            </div>
+            
+            <!-- Power-ups Section (New) -->
+            <div class="bg-gray-900 bg-opacity-50 p-4 rounded-lg mb-6">
+                <h3 class="text-xl font-bold mb-3">Power-ups Available:</h3>
+                <div class="flex flex-wrap gap-4">
+                    <div class="powerup-item relative">
+                        <div class="count">3</div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">⚡</div>
+                            <div class="text-sm font-bold">Double XP</div>
+                        </div>
+                    </div>
+                    <div class="powerup-item relative">
+                        <div class="count">1</div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">💡</div>
+                            <div class="text-sm font-bold">Hint</div>
+                        </div>
+                    </div>
+                    <div class="powerup-item relative">
+                        <div class="count">2</div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">🔄</div>
+                            <div class="text-sm font-bold">Retry</div>
+                        </div>
+                    </div>
+                    <div class="powerup-item relative">
+                        <div class="count">1</div>
+                        <div class="text-center">
+                            <div class="text-2xl mb-1">⏱️</div>
+                            <div class="text-sm font-bold">Time Extend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Game 1: Conjugation -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="conjugation">
+                    <img src="https://www.pngmart.com/files/17/Dragon-Ball-Super-Goku-PNG-Photos.png" alt="Conjugation Game" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Conjugation</h3>
+                    <p class="text-sm text-gray-300 mb-4">Conjugate verbs in their correct forms</p>
+                    <div class="text-xs bg-green-500 text-white rounded-full px-2 py-1 inline-block">+10 XP per correct answer</div>
+                </div>
+                
+                <!-- Game 2: Sentence Completion -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="sentence">
+                    <img src="https://www.pngmart.com/files/13/Piccolo-PNG-Free-Download.png" alt="Sentence Completion" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Sentence Completion</h3>
+                    <p class="text-sm text-gray-300 mb-4">Complete sentences with correct verb forms</p>
+                    <div class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 inline-block">+15 XP per correct answer</div>
+                </div>
+                
+                <!-- Game 3: Memorama -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="memorama">
+                    <img src="https://www.pngmart.com/files/13/Vegeta-PNG-HD.png" alt="Memorama" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Memorama</h3>
+                    <p class="text-sm text-gray-300 mb-4">Match verbs with their correct forms</p>
+                    <div class="text-xs bg-purple-500 text-white rounded-full px-2 py-1 inline-block">+20 XP per match</div>
+                </div>
+                
+                <!-- Game 4: Sopa de Letras -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="sopa">
+                    <img src="https://www.pngmart.com/files/13/Trunks-PNG-Pic.png" alt="Sopa de Letras" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Word Search</h3>
+                    <p class="text-sm text-gray-300 mb-4">Find hidden verbs in the letter grid</p>
+                    <div class="text-xs bg-yellow-500 text-white rounded-full px-2 py-1 inline-block">+25 XP per word</div>
+                </div>
+                
+                <!-- Game 5: Crucigrama -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="crucigrama">
+                    <img src="https://www.pngmart.com/files/13/Gohan-PNG-Transparent-Image.png" alt="Crucigrama" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Crossword</h3>
+                    <p class="text-sm text-gray-300 mb-4">Fill the crossword with correct verb forms</p>
+                    <div class="text-xs bg-indigo-500 text-white rounded-full px-2 py-1 inline-block">+30 XP per puzzle</div>
+                </div>
+                
+                <!-- Game 6: Ruleta -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="ruleta">
+                    <img src="https://www.pngmart.com/files/22/Dragon-Ball-Super-PNG-Transparent.png" alt="Ruleta" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Roulette</h3>
+                    <p class="text-sm text-gray-300 mb-4">Spin the wheel and answer verb challenges</p>
+                    <div class="text-xs bg-red-500 text-white rounded-full px-2 py-1 inline-block">+15-40 XP (random)</div>
+                </div>
+                
+                <!-- Game 7: Pronunciation -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="pronunciation">
+                    <img src="https://www.pngmart.com/files/22/Beerus-PNG-Photo.png" alt="Pronunciation" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Pronunciation</h3>
+                    <p class="text-sm text-gray-300 mb-4">Listen and select the correct verb form</p>
+                    <div class="text-xs bg-pink-500 text-white rounded-full px-2 py-1 inline-block">+20 XP per correct answer</div>
+                </div>
+                
+                <!-- Game 8: Super Quiz -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="quiz">
+                    <img src="https://www.pngmart.com/files/3/Dragon-Ball-Super-Saiyan-Goku-PNG-Clipart.png" alt="Super Quiz" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Super Quiz</h3>
+                    <p class="text-sm text-gray-300 mb-4">Test your knowledge with mixed questions</p>
+                    <div class="text-xs bg-green-500 text-white rounded-full px-2 py-1 inline-block">+50 XP per completed quiz</div>
+                </div>
+                
+                <!-- Game 9: Time Attack (New) -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="timeattack">
+                    <img src="https://www.pngmart.com/files/13/Dragon-Ball-Z-PNG-Free-Download.png" alt="Time Attack" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Time Attack</h3>
+                    <p class="text-sm text-gray-300 mb-4">Answer as many questions as possible before time runs out!</p>
+                    <div class="text-xs bg-red-500 text-white rounded-full px-2 py-1 inline-block">+5 XP per second remaining</div>
+                </div>
+                
+                <!-- Game 10: Versus Mode (New) -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="versus">
+                    <img src="https://www.pngmart.com/files/3/Dragon-Ball-Vegeta-PNG-Clipart.png" alt="Versus Mode" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Versus Mode</h3>
+                    <p class="text-sm text-gray-300 mb-4">Challenge the computer in a verb battle!</p>
+                    <div class="text-xs bg-purple-500 text-white rounded-full px-2 py-1 inline-block">+100 XP for victory</div>
+                </div>
+                
+                <!-- Game 11: Verb Fusion (New) -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="fusion">
+                    <img src="https://www.pngmart.com/files/3/Dragon-Ball-Super-PNG-File.png" alt="Verb Fusion" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Verb Fusion</h3>
+                    <p class="text-sm text-gray-300 mb-4">Combine verbs to create powerful combinations!</p>
+                    <div class="text-xs bg-blue-500 text-white rounded-full px-2 py-1 inline-block">+35 XP per fusion</div>
+                </div>
+                
+                <!-- Game 12: Power Level (New) -->
+                <div class="game-card rounded-lg p-6 text-center cursor-pointer" data-game="powerlevel">
+                    <img src="https://www.pngmart.com/files/22/Dragon-Ball-Super-Transparent-PNG.png" alt="Power Level" class="w-16 h-16 mx-auto mb-3">
+                    <h3 class="text-xl font-bold mb-2">Power Level</h3>
+                    <p class="text-sm text-gray-300 mb-4">Increase your power level by mastering verb tenses!</p>
+                    <div class="text-xs bg-yellow-500 text-white rounded-full px-2 py-1 inline-block">+45 XP for full power</div>
+                </div>
+            </div>
+            
+            <!-- Active Game Container -->
+            <div id="active-game-container" class="game-container bg-gray-900 bg-opacity-80 rounded-lg p-6 hidden">
+                <!-- Game content will be loaded here dynamically -->
+            </div>
+        </div>
+        
+        <!-- Boss Fight (unlocked at 500 XP) -->
+        <div id="boss-fight-container" class="hidden">
+            <div class="text-center mb-8">
+                <h2 class="game-title text-4xl text-red-500 mb-2">BOSS CHALLENGE!</h2>
+                <p class="text-xl text-blue-300">Defeat the boss by answering difficult verb questions!</p>
+            </div>
+            
+            <!-- Power Meter (New) -->
+            <div class="mb-6 max-w-md mx-auto">
+                <div class="flex justify-between mb-1">
+                    <span class="text-sm font-bold">Your Power Level</span>
+                    <span class="text-sm font-bold" id="power-level">0/100</span>
+                </div>
+                <div class="power-meter">
+                    <div id="power-meter-fill" class="power-meter-fill" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="boss-container text-center relative">
+                    <div class="power-up absolute inset-0"></div>
+                    <div class="kamehameha absolute top-1/2 left-full transform -translate-y-1/2 -translate-x-full"></div>
+                    <img id="boss-image" src="https://www.pngmart.com/files/3/Dragon-Ball-Z-Frieza-PNG-HD.png" alt="Level Boss" class="boss-image mx-auto w-64 h-64 object-contain relative z-10">
+                    <div class="mt-4">
+                        <h3 class="text-2xl font-bold mb-2">Frieza - Level 1 Boss</h3>
+                        <div class="max-w-xs mx-auto">
+                            <div class="flex justify-between text-sm mb-1">
+                                <span>Boss Health</span>
+                                <span id="boss-health-text">100%</span>
+                            </div>
+                            <div class="boss-health-bar rounded-full">
+                                <div id="boss-health-fill" class="boss-health-fill rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="boss-question-container bg-gray-900 bg-opacity-80 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Boss Question:</h3>
+                    <div id="boss-question" class="mb-6">
+                        <p class="text-lg mb-4">Choose the correct form of the verb "walk" in the present perfect tense for the third person singular:</p>
+                        <div class="grid grid-cols-1 gap-3">
+                            <button class="boss-answer bg-blue-900 bg-opacity-60 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-left transition duration-300">has walked</button>
+                            <button class="boss-answer bg-blue-900 bg-opacity-60 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-left transition duration-300">have walked</button>
+                            <button class="boss-answer bg-blue-900 bg-opacity-60 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-left transition duration-300">has walking</button>
+                            <button class="boss-answer bg-blue-900 bg-opacity-60 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-left transition duration-300">have been walking</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Special Attacks (New) -->
+                    <div id="special-attacks" class="mb-4">
+                        <h4 class="font-bold mb-2">Special Attacks:</h4>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button id="kamehameha-attack" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                                <span class="mr-2">🔵</span> Kamehameha
+                            </button>
+                            <button id="spirit-bomb-attack" class="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition duration-300 flex items-center justify-center" disabled>
+                                <span class="mr-2">⚪</span> Spirit Bomb
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <button id="next-boss-question" class="btn-primary px-6 py-2 rounded-full text-white font-bold hidden">Next Question</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <button id="back-to-games" class="btn-secondary px-4 py-2 rounded-full text-white font-bold">Back to Training</button>
+            </div>
+        </div>
+        
+        <!-- Results Screen -->
+        <div id="results-screen" class="hidden text-center">
+            <div class="mb-8">
+                <h2 class="game-title text-4xl text-green-400 mb-2">Training Complete!</h2>
+                <p class="text-xl text-blue-300">You've earned valuable XP and improved your verb mastery!</p>
+            </div>
+            
+            <div class="bg-gray-900 bg-opacity-80 rounded-lg p-8 max-w-md mx-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl">Total XP Earned:</span>
+                    <span class="text-xl font-bold text-yellow-400" id="result-xp">+65 XP</span>
+                </div>
+                
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl">Mastery Level:</span>
+                    <span class="text-xl font-bold text-green-400" id="result-mastery">62%</span>
+                </div>
+                
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl">Verbs Mastered:</span>
+                    <span class="text-xl font-bold text-blue-400" id="result-verbs">6/10</span>
+                </div>
+                
+                <!-- Achievement Unlock (New) -->
+                <div class="bg-gray-800 bg-opacity-60 p-4 rounded-lg mb-6">
+                    <h4 class="font-bold mb-2 text-yellow-400">New Achievement Unlocked!</h4>
+                    <div class="flex items-center">
+                        <div class="achievement-badge new mr-4">🎯</div>
+                        <div class="text-left">
+                            <p class="font-bold text-white">Verb Master</p>
+                            <p class="text-sm text-gray-300">Answered 10 verb questions correctly in a row</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <button id="continue-training" class="btn-primary px-8 py-3 rounded-full text-white font-bold text-lg">Continue Training</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Level Completed Screen -->
+        <div id="level-completed" class="hidden text-center">
+            <div class="mb-8">
+                <h2 class="game-title text-5xl text-yellow-400 mb-2">LEVEL COMPLETED!</h2>
+                <p class="text-xl text-blue-300">Congratulations! You've mastered this level's verbs!</p>
+            </div>
+            
+            <div class="bg-gray-900 bg-opacity-80 rounded-lg p-8 max-w-md mx-auto">
+                <img src="https://www.pngmart.com/files/13/Son-Goku-Dragon-Ball-PNG-Pic.png" alt="Level Complete" class="w-32 h-32 mx-auto mb-6">
+                
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl">Level Completed:</span>
+                    <span class="text-xl font-bold text-yellow-400" id="completed-level">Level 1</span>
+                </div>
+                
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl">Final Mastery:</span>
+                    <span class="text-xl font-bold text-green-400" id="final-mastery">85%</span>
+                </div>
+                
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl">New Level Unlocked:</span>
+                    <span class="text-xl font-bold text-blue-400" id="new-level">Level 2</span>
+                </div>
+                
+                <!-- New Rewards (New) -->
+                <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg mb-6">
+                    <h4 class="font-bold mb-2 text-yellow-400">Rewards Earned:</h4>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-gray-800 bg-opacity-50 p-2 rounded-lg text-center">
+                            <div class="text-2xl mb-1">⚡</div>
+                            <div class="text-sm">+2 Double XP</div>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-2 rounded-lg text-center">
+                            <div class="text-2xl mb-1">💰</div>
+                            <div class="text-sm">+100 Dragon Coins</div>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-2 rounded-lg text-center">
+                            <div class="text-2xl mb-1">👕</div>
+                            <div class="text-sm">New Outfit</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 grid grid-cols-2 gap-4">
+                    <button id="replay-level" class="btn-secondary px-4 py-3 rounded-full text-white font-bold text-lg">Replay Level</button>
+                    <button id="next-level" class="btn-primary px-4 py-3 rounded-full text-white font-bold text-lg">Next Level</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- User Profile (New) -->
+        <div id="user-profile" class="hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold">Mi Perfil</h2>
+                <button id="close-profile" class="btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">← Back</button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Profile Stats -->
+                <div class="game-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.pngmart.com/files/3/Dragon-Ball-Goku-Transparent-PNG.png" alt="Player Character" class="w-20 h-20 mr-4">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-1">Son Goku</h3>
+                            <p class="text-blue-300">Level 5 Warrior</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-gray-700 pt-4 mt-4">
+                        <div class="flex justify-between mb-2">
+                            <span>Total XP:</span>
+                            <span class="font-bold text-yellow-400">1,250 XP</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span>Verbs Mastered:</span>
+                            <span class="font-bold text-green-400">42/100</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span>Games Played:</span>
+                            <span class="font-bold text-blue-400">37</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span>Boss Fights Won:</span>
+                            <span class="font-bold text-red-400">3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievements -->
+                <div class="game-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Achievements</h3>
+                    <div class="trophy-case">
+                        <div class="trophy">
+                            <div class="icon">🏆</div>
+                            <p class="text-sm font-bold">First Victory</p>
+                        </div>
+                        <div class="trophy">
+                            <div class="icon">⚡</div>
+                            <p class="text-sm font-bold">Speed Demon</p>
+                        </div>
+                        <div class="trophy">
+                            <div class="icon">🎯</div>
+                            <p class="text-sm font-bold">Verb Master</p>
+                        </div>
+                        <div class="trophy locked">
+                            <div class="icon">🔥</div>
+                            <p class="text-sm font-bold">Perfect Score</p>
+                        </div>
+                        <div class="trophy locked">
+                            <div class="icon">💪</div>
+                            <p class="text-sm font-bold">Boss Slayer</p>
+                        </div>
+                        <div class="trophy locked">
+                            <div class="icon">🌟</div>
+                            <p class="text-sm font-bold">Grammar God</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Progress History -->
+                <div class="game-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Recent Progress</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-bold">Memorama</span>
+                                <span class="text-green-400">+60 XP</span>
+                            </div>
+                            <div class="text-sm text-gray-400">Today, 2:30 PM</div>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-bold">Boss Fight</span>
+                                <span class="text-green-400">+200 XP</span>
+                            </div>
+                            <div class="text-sm text-gray-400">Yesterday, 5:15 PM</div>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-bold">Word Search</span>
+                                <span class="text-green-400">+75 XP</span>
+                            </div>
+                            <div class="text-sm text-gray-400">Yesterday, 4:45 PM</div>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-bold">Conjugation</span>
+                                <span class="text-green-400">+50 XP</span>
+                            </div>
+                            <div class="text-sm text-gray-400">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Character Customization (New) -->
+            <div class="game-card rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-bold mb-4">Character Customization</h3>
+                <div class="flex flex-wrap gap-4">
+                    <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg text-center">
+                        <img src="https://www.pngmart.com/files/3/Dragon-Ball-Goku-Transparent-PNG.png" alt="Normal Form" class="w-16 h-16 mx-auto mb-2">
+                        <p class="font-bold">Normal Form</p>
+                        <div class="mt-2 text-xs bg-green-500 text-white rounded-full px-2 py-1 inline-block">Active</div>
+                    </div>
+                    <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg text-center">
+                        <img src="https://www.pngmart.com/files/3/Dragon-Ball-Super-Saiyan-Goku-PNG-Clipart.png" alt="Super Saiyan" class="w-16 h-16 mx-auto mb-2">
+                        <p class="font-bold">Super Saiyan</p>
+                        <div class="mt-2 text-xs bg-blue-500 text-white rounded-full px-2 py-1 inline-block">Unlock at Level 10</div>
+                    </div>
+                    <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg text-center">
+                        <img src="https://www.pngmart.com/files/13/Son-Goku-Dragon-Ball-PNG-Pic.png" alt="SSJ3" class="w-16 h-16 mx-auto mb-2">
+                        <p class="font-bold">Super Saiyan 3</p>
+                        <div class="mt-2 text-xs bg-purple-500 text-white rounded-full px-2 py-1 inline-block">Unlock at Level 20</div>
+                    </div>
+                    <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg text-center">
+                        <img src="https://www.pngmart.com/files/22/Dragon-Ball-Super-PNG-Transparent.png" alt="Ultra Instinct" class="w-16 h-16 mx-auto mb-2">
+                        <p class="font-bold">Ultra Instinct</p>
+                        <div class="mt-2 text-xs bg-red-500 text-white rounded-full px-2 py-1 inline-block">Unlock at Level 40</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Friends Leaderboard (New) -->
+            <div class="game-card rounded-lg p-6 mt-6">
+                <h3 class="text-xl font-bold mb-4">Leaderboard</h3>
+                <div class="space-y-3">
+                    <div class="bg-yellow-500 bg-opacity-20 p-3 rounded-lg flex items-center">
+                        <div class="font-bold text-xl mr-3">1</div>
+                        <img src="https://www.pngmart.com/files/13/Vegeta-PNG-HD.png" alt="Vegeta" class="w-10 h-10 mr-3">
+                        <div class="flex-grow">
+                            <p class="font-bold">Vegeta</p>
+                            <p class="text-sm text-gray-300">Level 8 Warrior</p>
+                        </div>
+                        <div class="text-yellow-400 font-bold">2,150 XP</div>
+                    </div>
+                    <div class="bg-gray-600 bg-opacity-20 p-3 rounded-lg flex items-center">
+                        <div class="font-bold text-xl mr-3">2</div>
+                        <img src="https://www.pngmart.com/files/3/Dragon-Ball-Goku-Transparent-PNG.png" alt="Goku" class="w-10 h-10 mr-3">
+                        <div class="flex-grow">
+                            <p class="font-bold">Goku (You)</p>
+                            <p class="text-sm text-gray-300">Level 5 Warrior</p>
+                        </div>
+                        <div class="text-white font-bold">1,250 XP</div>
+                    </div>
+                    <div class="bg-amber-800 bg-opacity-20 p-3 rounded-lg flex items-center">
+                        <div class="font-bold text-xl mr-3">3</div>
+                        <img src="https://www.pngmart.com/files/13/Gohan-PNG-Transparent-Image.png" alt="Gohan" class="w-10 h-10 mr-3">
+                        <div class="flex-grow">
+                            <p class="font-bold">Gohan</p>
+                            <p class="text-sm text-gray-300">Level 4 Warrior</p>
+                        </div>
+                        <div class="text-amber-400 font-bold">980 XP</div>
+                    </div>
+                    <div class="bg-gray-800 bg-opacity-50 p-3 rounded-lg flex items-center">
+                        <div class="font-bold text-xl mr-3">4</div>
+                        <img src="https://www.pngmart.com/files/13/Piccolo-PNG-Free-Download.png" alt="Piccolo" class="w-10 h-10 mr-3">
+                        <div class="flex-grow">
+                            <p class="font-bold">Piccolo</p>
+                            <p class="text-sm text-gray-300">Level 3 Warrior</p>
+                        </div>
+                        <div class="text-white font-bold">720 XP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Help Center (New) -->
+        <div id="help-center" class="hidden">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-bold">Help Center</h2>
+                <button id="close-help" class="btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">← Back</button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Verb Rules -->
+                <div class="game-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Verb Rules</h3>
+                    <div class="space-y-4">
+                        <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Present Simple</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Use the base form for I/you/we/they (e.g., I walk)</li>
+                                <li>Add -s or -es for he/she/it (e.g., She walks)</li>
+                                <li>For negative, use "do not" or "does not" (e.g., I do not walk)</li>
+                                <li>For questions, start with "do" or "does" (e.g., Do you walk?)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Past Simple</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Regular verbs: add -ed (e.g., walked, talked)</li>
+                                <li>Irregular verbs have unique forms (e.g., go → went)</li>
+                                <li>For negative, use "did not" (e.g., I did not walk)</li>
+                                <li>For questions, start with "did" (e.g., Did you walk?)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-blue-900 bg-opacity-30 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Future Simple</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Use "will" + base form (e.g., I will walk)</li>
+                                <li>For negative, use "will not" (e.g., I will not walk)</li>
+                                <li>For questions, start with "will" (e.g., Will you walk?)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Game Tips -->
+                <div class="game-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Game Tips</h3>
+                    <div class="space-y-4">
+                        <div class="bg-purple-900 bg-opacity-30 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Power-ups</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li><span class="font-bold">⚡ Double XP</span>: Doubles XP earned for 5 minutes</li>
+                                <li><span class="font-bold">💡 Hint</span>: Reveals the correct answer in difficult questions</li>
+                                <li><span class="font-bold">🔄 Retry</span>: Allows you to retry a failed question</li>
+                                <li><span class="font-bold">⏱️ Time Extend</span>: Adds 30 seconds to timed games</li>
+                            </ul>
+                        </div>
+                        <div class="bg-purple-900 bg-opacity-30 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Boss Fights</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Boss fights unlock when you reach 500 XP</li>
+                                <li>Correct answers deal damage to the boss</li>
+                                <li>Incorrect answers allow the boss to recover health</li>
+                                <li>Special attacks become available when your power meter fills</li>
+                                <li>Defeating a boss grants large XP bonuses and special rewards</li>
+                            </ul>
+                        </div>
+                        <div class="bg-purple-900 bg-opacity-30 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">Level Progression</h4>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Master at least 80% of verbs to unlock the next level</li>
+                                <li>Higher levels introduce more complex verb forms and tenses</li>
+                                <li>Complete all 10 levels in a mode to unlock the next mode</li>
+                                <li>New characters and transformations unlock at certain levels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ -->
+                <div class="game-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Frequently Asked Questions</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">How do I earn Dragon Coins?</h4>
+                            <p class="text-sm">Dragon Coins are earned by completing levels, daily challenges, and boss fights. You can use them to purchase power-ups and character customizations.</p>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">How do I unlock new characters?</h4>
+                            <p class="text-sm">New characters are unlocked by reaching certain levels or by completing specific achievements. Check the character selection screen for details.</p>
+                        </div>
+                        <div class="bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+                            <h4 class="font-bold mb-2">What happens after I complete all levels?</h4>
+                            <p class="text-sm">After completing all levels, you unlock Ultimate Mode with randomly generated challenges that test all your verb knowledge!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Support -->
+                <div class="game-card rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">Contact Support</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block mb-1 text-sm font-bold">Subject</label>
+                            <select class="w-full bg-gray-800 border border-gray-700 rounded p-2 text-white">
+                                <option>Technical Issue</option>
+                                <option>Gameplay Question</option>
+                                <option>Suggestion</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-sm font-bold">Message</label>
+                            <textarea class="w-full bg-gray-800 border border-gray-700 rounded p-2 text-white h-24"></textarea>
+                        </div>
+                        <button type="button" class="btn-primary px-4 py-2 rounded-full text-white font-bold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Help Button -->
+    <div class="floating-help-btn" id="floating-help-btn">
+        <span>?</span>
+    </div>
+
+    <!-- Game Templates (Hidden) -->
+    <!-- Conjugation Game Template -->
+    <template id="conjugation-game-template">
+        <div class="conjugation-game">
+            <h3 class="text-2xl font-bold mb-6 text-center">Verb Conjugation Training</h3>
+            
+            <div class="conjugation-card">
+                <div class="mb-4 text-center">
+                    <p class="text-lg mb-2">Conjugate the verb <span class="verb-to-conjugate font-bold text-yellow-300">walk</span> in the <span class="tense-to-use font-bold text-yellow-300">present simple</span> tense:</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center">
+                        <span class="w-20 font-bold">I</span>
+                        <input type="text" class="conjugation-input flex-grow" placeholder="Type verb form...">
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-20 font-bold">You</span>
+                        <input type="text" class="conjugation-input flex-grow" placeholder="Type verb form...">
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-20 font-bold">He/She/It</span>
+                        <input type="text" class="conjugation-input flex-grow" placeholder="Type verb form...">
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-20 font-bold">We</span>
+                        <input type="text" class="conjugation-input flex-grow" placeholder="Type verb form...">
+                    </div>
+                    <div class="flex items-center">
+                        <span class="w-20 font-bold">They</span>
+                        <input type="text" class="conjugation-input flex-grow" placeholder="Type verb form...">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-6">
+                <button class="check-conjugation btn-primary px-8 py-3 rounded-full text-white font-bold">Check Answers</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Sentence Game Template -->
+    <template id="sentence-game-template">
+        <div class="sentence-game">
+            <h3 class="text-2xl font-bold mb-6 text-center">Sentence Completion Challenge</h3>
+            
+            <div class="sentence-container">
+                <p class="text-lg mb-6">Complete the following sentences with the correct form of the verb in parentheses:</p>
+                
+                <div class="space-y-6">
+                    <div>
+                        <p class="mb-3">1. She ___________ to school every day. (walk)</p>
+                        <div class="flex flex-col md:flex-row gap-2">
+                            <input type="text" class="sentence-input" placeholder="Type verb form...">
+                            <button class="check-sentence btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">Check</button>
+                        </div>
+                        <p class="feedback mt-2 hidden"></p>
+                    </div>
+                    
+                    <div>
+                        <p class="mb-3">2. They ___________ soccer yesterday. (play)</p>
+                        <div class="flex flex-col md:flex-row gap-2">
+                            <input type="text" class="sentence-input" placeholder="Type verb form...">
+                            <button class="check-sentence btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">Check</button>
+                        </div>
+                        <p class="feedback mt-2 hidden"></p>
+                    </div>
+                    
+                    <div>
+                        <p class="mb-3">3. He ___________ at the computer right now. (work)</p>
+                        <div class="flex flex-col md:flex-row gap-2">
+                            <input type="text" class="sentence-input" placeholder="Type verb form...">
+                            <button class="check-sentence btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">Check</button>
+                        </div>
+                        <p class="feedback mt-2 hidden"></p>
+                    </div>
+                    
+                    <div>
+                        <p class="mb-3">4. We ___________ to go to the park tomorrow. (want)</p>
+                        <div class="flex flex-col md:flex-row gap-2">
+                            <input type="text" class="sentence-input" placeholder="Type verb form...">
+                            <button class="check-sentence btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">Check</button>
+                        </div>
+                        <p class="feedback mt-2 hidden"></p>
+                    </div>
+                    
+                    <div>
+                        <p class="mb-3">5. I ___________ for help when I'm stuck. (ask)</p>
+                        <div class="flex flex-col md:flex-row gap-2">
+                            <input type="text" class="sentence-input" placeholder="Type verb form...">
+                            <button class="check-sentence btn-secondary px-4 py-2 rounded-full text-white font-bold text-sm">Check</button>
+                        </div>
+                        <p class="feedback mt-2 hidden"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-6">
+                <button class="next-sentences btn-primary px-8 py-3 rounded-full text-white font-bold">Next Set</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Memorama Game Template -->
+    <template id="memorama-game-template">
+        <div class="memorama-game">
+            <h3 class="text-2xl font-bold mb-6 text-center">Memorama Challenge</h3>
+            
+            <div class="flex justify-between items-center mb-4">
+                <div class="text-lg">
+                    Match each verb with its correct form
+                </div>
+                <div class="text-lg">
+                    Pairs found: <span class="pairs-found">0</span>/<span class="total-pairs">6</span>
+                </div>
+            </div>
+            
+            <div class="memorama-grid mb-6">
+                <!-- Cards will be generated dynamically -->
+                <div class="memorama-card" data-card-value="walk">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">walk</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="walk">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">walks</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="play">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">play</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="play">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">plays</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="work">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">work</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="work">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">works</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="talk">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">talk</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="talk">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">talks</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="look">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">look</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="look">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">looks</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="need">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">need</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+                <div class="memorama-card" data-card-value="need">
+                    <div class="memorama-card-inner">
+                        <div class="memorama-card-front">needs</div>
+                        <div class="memorama-card-back"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="reset-memorama btn-primary px-8 py-3 rounded-full text-white font-bold">Reset Game</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Word Search Game Template -->
+    <template id="sopa-game-template">
+        <div class="sopa-game">
+            <h3 class="text-2xl font-bold mb-6 text-center">Word Search Challenge</h3>
+            
+            <div class="flex justify-between items-center mb-4">
+                <div class="text-lg">
+                    Find all the verbs in the grid
+                </div>
+                <div class="text-lg">
+                    Words found: <span class="words-found">0</span>/<span class="total-words">6</span>
+                </div>
+            </div>
+            
+            <div class="sopa-grid mb-4">
+                <!-- Grid will be generated dynamically -->
+            </div>
+            
+            <div class="word-list bg-gray-900 bg-opacity-40 p-4 rounded-lg mb-6">
+                <h4 class="font-bold mb-2">Words to Find:</h4>
+                <div class="flex flex-wrap gap-2">
+                    <div class="word-item py-1 px-3 bg-blue-900 bg-opacity-40 rounded-full">WALK</div>
+                    <div class="word-item py-1 px-3 bg-blue-900 bg-opacity-40 rounded-full">TALK</div>
+                    <div class="word-item py-1 px-3 bg-blue-900 bg-opacity-40 rounded-full">PLAY</div>
+                    <div class="word-item py-1 px-3 bg-blue-900 bg-opacity-40 rounded-full">WORK</div>
+                    <div class="word-item py-1 px-3 bg-blue-900 bg-opacity-40 rounded-full">LOOK</div>
+                    <div class="word-item py-1 px-3 bg-blue-900 bg-opacity-40 rounded-full">HELP</div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="new-wordsearch btn-primary px-8 py-3 rounded-full text-white font-bold">New Puzzle</button>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize state
+            let currentXP = 0;
+            const maxXP = 500;
+            let currentScreen = 'game-mode-selection';
+            
+            // Function to show a screen and hide others
+            function showScreen(screenId) {
+                $(`#${currentScreen}`).addClass('hidden');
+                $(`#${screenId}`).removeClass('hidden');
+                currentScreen = screenId;
+            }
+            
+            // Function to update XP
+            function updateXP(amount) {
+                currentXP += amount;
+                if (currentXP > maxXP) currentXP = maxXP;
+                
+                const percentage = (currentXP / maxXP) * 100;
+                $('#xp-counter').text(`${currentXP}/${maxXP} XP`);
+                $('#xp-progress-bar').css('width', `${percentage}%`);
+                
+                // Check if boss fight should be unlocked
+                if (currentXP >= maxXP) {
+                    showScreen('boss-fight-container');
+                }
+            }
+            
+            // Function to fetch game template and load it
+            function loadGameTemplate(gameType) {
+                const templateContent = $(`#${gameType}-game-template`).html();
+                if (templateContent) {
+                    $('#active-game-container').html(templateContent).removeClass('hidden');
+                } else {
+                    $('#active-game-container').html(`
+                        <div class="text-center py-8">
+                            <h3 class="text-2xl font-bold mb-4">¡Juego en desarrollo!</h3>
+                            <p class="mb-4">Este juego está siendo preparado para tu entrenamiento.</p>
+                            <p>¡Vuelve pronto para probarlo!</p>
+                        </div>
+                    `).removeClass('hidden');
+                }
+            }
+            
+            // Event listeners for navigation
+            $('.game-mode-card').on('click', function() {
+                $('.game-mode-card').removeClass('active');
+                $(this).addClass('active');
+                showScreen('level-selection');
+            });
+            
+            $('#back-to-modes').on('click', function() {
+                showScreen('game-mode-selection');
+            });
+            
+            $('.level-button:not(.locked)').on('click', function() {
+                $('.level-button').removeClass('active');
+                $(this).addClass('active');
+                showScreen('pre-game-tips');
+            });
+            
+            $('#start-games').on('click', function() {
+                showScreen('games-container');
+            });
+            
+            $('#back-to-levels').on('click', function() {
+                showScreen('level-selection');
+            });
+            
+            $('.game-card').on('click', function() {
+                const gameType = $(this).data('game');
+                loadGameTemplate(gameType);
+            });
+            
+            $('#back-to-games').on('click', function() {
+                $('#active-game-container').addClass('hidden');
+                showScreen('games-container');
+            });
+            
+            $('#continue-training').on('click', function() {
+                $('#active-game-container').addClass('hidden');
+                showScreen('games-container');
+            });
+            
+            $('#replay-level').on('click', function() {
+                showScreen('pre-game-tips');
+            });
+            
+            $('#next-level').on('click', function() {
+                showScreen('level-selection');
+            });
+            
+            // Character selection
+            $('.character-card:not(.locked)').on('click', function() {
+                $('.character-card').removeClass('selected');
+                $(this).addClass('selected');
+            });
+            
+            // Profile button
+            $('#profile-button').on('click', function() {
+                showScreen('user-profile');
+            });
+            
+            $('#close-profile').on('click', function() {
+                showScreen('game-mode-selection');
+            });
+            
+            // Help button
+            $('#floating-help-btn').on('click', function() {
+                showScreen('help-center');
+            });
+            
+            $('#close-help').on('click', function() {
+                showScreen('game-mode-selection');
+            });
+            
+            // Demo Functions
+            // These would be replaced with real API calls in production
+            
+            // Example of handling conjugation check
+            $(document).on('click', '.check-conjugation', function() {
+                // Simulate checking answers
+                $('.conjugation-input').addClass('border-green-500');
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 }
+                });
+                updateXP(50);
+                
+                setTimeout(() => {
+                    showScreen('results-screen');
+                }, 1500);
+            });
+            
+            // Example of handling sentence check
+            $(document).on('click', '.check-sentence', function() {
+                const input = $(this).prev('.sentence-input');
+                const feedback = $(this).parent().next('.feedback');
+                
+                // Simulate checking the answer
+                input.addClass('border-green-500');
+                feedback.text('¡Correcto! +15 XP').removeClass('hidden text-red-500').addClass('text-green-500');
+                updateXP(15);
+            });
+            
+            // Example of handling memorama reset
+            $(document).on('click', '.reset-memorama', function() {
+                $('.memorama-card').removeClass('flipped');
+                $('.pairs-found').text('0');
+            });
+            
+            // Example memorama card flipping
+            $(document).on('click', '.memorama-card:not(.flipped)', function() {
+                $(this).addClass('flipped');
+                
+                // Simulate matching
+                const flippedCards = $('.memorama-card.flipped:not(.matched)');
+                if (flippedCards.length === 2) {
+                    const firstValue = $(flippedCards[0]).data('card-value');
+                    const secondValue = $(flippedCards[1]).data('card-value');
+                    
+                    if (firstValue === secondValue) {
+                        // Match found
+                        flippedCards.addClass('matched');
+                        const currentPairs = parseInt($('.pairs-found').text());
+                        $('.pairs-found').text(currentPairs + 1);
+                        updateXP(20);
+                        
+                        if (currentPairs + 1 >= parseInt($('.total-pairs').text())) {
+                            // All pairs found
+                            confetti({
+                                particleCount: 100,
+                                spread: 70,
+                                origin: { y: 0.6 }
+                            });
+                            setTimeout(() => {
+                                showScreen('results-screen');
+                            }, 1500);
+                        }
+                    } else {
+                        // No match
+                        setTimeout(() => {
+                            flippedCards.removeClass('flipped');
+                        }, 1000);
+                    }
+                }
+            });
+            
+            // Boss fight mechanics
+            $('.boss-answer').on('click', function() {
+                // Simulate correct answer
+                $(this).addClass('bg-green-700');
+                $('#boss-image').addClass('damaged');
+                
+                // Update boss health
+                const currentHealth = parseInt($('#boss-health-fill').css('width')) / $('#boss-health-fill').parent().width() * 100;
+                const newHealth = Math.max(0, currentHealth - 20);
+                $('#boss-health-fill').css('width', `${newHealth}%`);
+                $('#boss-health-text').text(`${Math.round(newHealth)}%`);
+                
+                // Update power meter
+                const currentPower = parseInt($('#power-meter-fill').css('width')) / $('#power-meter-fill').parent().width() * 100;
+                const newPower = Math.min(100, currentPower + 25);
+                $('#power-meter-fill').css('width', `${newPower}%`);
+                $('#power-level').text(`${Math.round(newPower)}/100`);
+                
+                if (newPower >= 100) {
+                    $('#kamehameha-attack').removeAttr('disabled').addClass('pulse');
+                }
+                
+                if (newHealth <= 0) {
+                    // Boss defeated
+                    setTimeout(() => {
+                        showScreen('level-completed');
+                    }, 1500);
+                } else {
+                    // Show next question button
+                    $('#next-boss-question').removeClass('hidden');
+                }
+                
+                setTimeout(() => {
+                    $('#boss-image').removeClass('damaged');
+                }, 500);
+            });
+            
+            // Special attack
+            $('#kamehameha-attack').on('click', function() {
+                if ($(this).attr('disabled')) return;
+                
+                const kamehameha = $('.kamehameha');
+                const powerUp = $('.power-up');
+                
+                // Animate kamehameha
+                powerUp.css('opacity', 0.8);
+                anime({
+                    targets: powerUp[0],
+                    opacity: [0.8, 0],
+                    scale: [1, 1.5],
+                    duration: 1000,
+                    easing: 'easeOutExpo'
+                });
+                
+                anime({
+                    targets: kamehameha[0],
+                    scaleX: [0, 1],
+                    opacity: [1, 0],
+                    translateX: [0, 100],
+                    duration: 1000,
+                    easing: 'easeOutExpo',
+                    complete: function() {
+                        $('#boss-image').addClass('damaged');
+                        
+                        // Reduce boss health
+                        const currentHealth = parseInt($('#boss-health-fill').css('width')) / $('#boss-health-fill').parent().width() * 100;
+                        const newHealth = Math.max(0, currentHealth - 40);
+                        $('#boss-health-fill').css('width', `${newHealth}%`);
+                        $('#boss-health-text').text(`${Math.round(newHealth)}%`);
+                        
+                        // Reset power meter
+                        $('#power-meter-fill').css('width', '0%');
+                        $('#power-level').text('0/100');
+                        
+                        // Disable and remove pulse from button
+                        $('#kamehameha-attack').attr('disabled', 'disabled').removeClass('pulse');
+                        
+                        if (newHealth <= 0) {
+                            // Boss defeated
+                            setTimeout(() => {
+                                showScreen('level-completed');
+                            }, 1500);
+                        }
+                        
+                        setTimeout(() => {
+                            $('#boss-image').removeClass('damaged');
+                        }, 500);
+                    }
+                });
+            });
+            
+            // Test XP gain (for demo purposes)
+            $('#next-boss-question, .next-sentences, .new-wordsearch').on('click', function() {
+                updateXP(25); // Simulate earning XP
+            });
+        });
+    </script>
+</body>
+</html>
