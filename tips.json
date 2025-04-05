@@ -1,0 +1,799 @@
+{
+    "app_config": {
+      "version": "1.0",
+      "points_conversion": 0.014,
+      "max_xp_per_level": 500,
+      "streak_multiplier": 2
+    },
+    "levels": {
+      "easy_1": {
+        "name": "Modo Fácil - Nivel 1",
+        "description": "Verbios regulares comunes en presente y pasado simple",
+        "difficulty": "easy",
+        "number": 1,
+        "verbs_required": 10,
+        "mastery_percentage": 0.8,
+        "unlock_condition": "none",
+        "next_level": "easy_2",
+        "tips": [
+          "Todos los verbos en este nivel son regulares",
+          "Para el pasado, simplemente añade -ed al verbo base",
+          "En presente, la tercera persona (he/she/it) añade -s"
+        ]
+      },
+      "easy_2": {
+        "name": "Modo Fácil - Nivel 2",
+        "description": "Más verbos regulares comunes con variaciones ortográficas",
+        "difficulty": "easy",
+        "number": 2,
+        "verbs_required": 10,
+        "mastery_percentage": 0.8,
+        "unlock_condition": "complete_easy_1",
+        "next_level": "easy_3",
+        "tips": [
+          "Algunos verbos duplican la consonante final antes de -ed (stop → stopped)",
+          "Verbos que terminan en 'e' solo añaden -d (live → lived)",
+          "Practica la pronunciación de terminaciones -ed (/t/, /d/, /ɪd/)"
+        ]
+      },
+      "easy_3": {
+        "name": "Modo Fácil - Nivel 3",
+        "description": "Verbios regulares con pronunciación avanzada y contextos cotidianos",
+        "difficulty": "easy",
+        "number": 3,
+        "verbs_required": 10,
+        "mastery_percentage": 0.85,
+        "unlock_condition": "complete_easy_2",
+        "next_level": "easy_4",
+        "tips": [
+          "Algunos verbos cambian su pronunciación radical en pasado (ej: 'dreamed' vs 'dreamt')",
+          "Practica verbos útiles para viajes y compras",
+          "Presta atención a los verbos que terminan en consonante + 'y' (ej: 'carry' → 'carried')"
+        ]
+      }
+    },
+    "verbs": {
+      "play": {
+        "base": "play",
+        "present": "play",
+        "present_third": "plays",
+        "past": "played",
+        "past_participle": "played",
+        "future": "will play",
+        "spanish": "jugar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "activities",
+        "examples": [
+          {
+            "sentence": "I play soccer every weekend.",
+            "translation": "Yo juego fútbol todos los fines de semana.",
+            "tense": "present"
+          },
+          {
+            "sentence": "She played the piano yesterday.",
+            "translation": "Ella tocó el piano ayer.",
+            "tense": "past"
+          },
+          {
+            "sentence": "We will play a game tomorrow.",
+            "translation": "Nosotros jugaremos un juego mañana.",
+            "tense": "future"
+          }
+        ],
+        "tips": [
+          "Verbo regular: añade -ed para pasado",
+          "No cambia en tercera persona del presente (solo añade -s)",
+          "Forma continua: playing"
+        ],
+        "image_url": "https://i.imgur.com/soccer.png",
+        "sound_url": "https://api.dictionaryapi.dev/media/pronunciations/en/play-uk.mp3"
+      },
+      "work": {
+        "base": "work",
+        "present": "work",
+        "present_third": "works",
+        "past": "worked",
+        "past_participle": "worked",
+        "future": "will work",
+        "spanish": "trabajar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "daily",
+        "examples": [
+          {
+            "sentence": "He works in an office.",
+            "translation": "Él trabaja en una oficina.",
+            "tense": "present"
+          },
+          {
+            "sentence": "They worked late last night.",
+            "translation": "Ellos trabajaron hasta tarde anoche.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed para pasado",
+          "Tercera persona: works",
+          "Forma continua: working"
+        ]
+      },
+      "walk": {
+        "base": "walk",
+        "present": "walk",
+        "present_third": "walks",
+        "past": "walked",
+        "past_participle": "walked",
+        "future": "will walk",
+        "spanish": "caminar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "movement",
+        "examples": [
+          {
+            "sentence": "I walk to school every day.",
+            "translation": "Yo camino a la escuela todos los días.",
+            "tense": "present"
+          }
+        ],
+        "tips": [
+          "Pasado: walked",
+          "Presente tercera persona: walks"
+        ]
+      },
+      "talk": {
+        "base": "talk",
+        "present": "talk",
+        "present_third": "talks",
+        "past": "talked",
+        "past_participle": "talked",
+        "future": "will talk",
+        "spanish": "hablar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "communication",
+        "examples": [
+          {
+            "sentence": "She talks to her mother every day.",
+            "translation": "Ella habla con su madre todos los días.",
+            "tense": "present"
+          }
+        ],
+        "tips": [
+          "Verbo regular: talked",
+          "Pronunciación pasado: /tɔːkt/"
+        ]
+      },
+      "listen": {
+        "base": "listen",
+        "present": "listen",
+        "present_third": "listens",
+        "past": "listened",
+        "past_participle": "listened",
+        "future": "will listen",
+        "spanish": "escuchar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "communication",
+        "examples": [
+          {
+            "sentence": "We listened to music yesterday.",
+            "translation": "Nosotros escuchamos música ayer.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Requiere preposición 'to': listen to music",
+          "Pasado: listened"
+        ]
+      },
+      "learn": {
+        "base": "learn",
+        "present": "learn",
+        "present_third": "learns",
+        "past": "learned",
+        "past_participle": "learned",
+        "future": "will learn",
+        "spanish": "aprender",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "education",
+        "examples": [
+          {
+            "sentence": "You learn English with this app!",
+            "translation": "¡Tú aprendes inglés con esta app!",
+            "tense": "present"
+          }
+        ],
+        "tips": [
+          "Pasado: learned (UK también learnt)",
+          "Presente tercera persona: learns"
+        ]
+      },
+      "ask": {
+        "base": "ask",
+        "present": "ask",
+        "present_third": "asks",
+        "past": "asked",
+        "past_participle": "asked",
+        "future": "will ask",
+        "spanish": "preguntar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "communication",
+        "examples": [
+          {
+            "sentence": "He asked a question.",
+            "translation": "Él preguntó una pregunta.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Pasado: asked (pronunciación /æskt/)",
+          "Usa 'ask for' para pedir algo"
+        ]
+      },
+      "help": {
+        "base": "help",
+        "present": "help",
+        "present_third": "helps",
+        "past": "helped",
+        "past_participle": "helped",
+        "future": "will help",
+        "spanish": "ayudar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "daily",
+        "examples": [
+          {
+            "sentence": "She helps her parents.",
+            "translation": "Ella ayuda a sus padres.",
+            "tense": "present"
+          }
+        ],
+        "tips": [
+          "Pasado: helped",
+          "No cambia mucho en sus conjugaciones"
+        ]
+      },
+      "want": {
+        "base": "want",
+        "present": "want",
+        "present_third": "wants",
+        "past": "wanted",
+        "past_participle": "wanted",
+        "future": "will want",
+        "spanish": "querer",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "desires",
+        "examples": [
+          {
+            "sentence": "I wanted a new phone.",
+            "translation": "Yo quise un teléfono nuevo.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Pasado: wanted (pronunciación /ˈwɒntɪd/)",
+          "Siempre sigue un objeto: want + algo"
+        ]
+      },
+      "need": {
+        "base": "need",
+        "present": "need",
+        "present_third": "needs",
+        "past": "needed",
+        "past_participle": "needed",
+        "future": "will need",
+        "spanish": "necesitar",
+        "level": "easy_1",
+        "difficulty": "regular",
+        "category": "daily",
+        "examples": [
+          {
+            "sentence": "You need to study more.",
+            "translation": "Tú necesitas estudiar más.",
+            "tense": "present"
+          }
+        ],
+        "tips": [
+          "Pasado: needed",
+          "Se puede usar como verbo modal: need not (needn't)"
+        ]
+      },
+      "stop": {
+        "base": "stop",
+        "present": "stop",
+        "present_third": "stops",
+        "past": "stopped",
+        "past_participle": "stopped",
+        "future": "will stop",
+        "spanish": "detener",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "movement",
+        "examples": [
+          {
+            "sentence": "The car stopped suddenly.",
+            "translation": "El coche se detuvo bruscamente.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Duplica la 'p' antes de añadir -ed",
+          "Pronunciación pasado: /stɒpt/"
+        ]
+      },
+      "live": {
+        "base": "live",
+        "present": "live",
+        "present_third": "lives",
+        "past": "lived",
+        "past_participle": "lived",
+        "future": "will live",
+        "spanish": "vivir",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "daily",
+        "examples": [
+          {
+            "sentence": "They lived in Paris for 5 years.",
+            "translation": "Ellos vivieron en París durante 5 años.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Solo añade -d porque termina en 'e'",
+          "Pronunciación: /lɪvd/"
+        ]
+      },
+      "plan": {
+        "base": "plan",
+        "present": "plan",
+        "present_third": "plans",
+        "past": "planned",
+        "past_participle": "planned",
+        "future": "will plan",
+        "spanish": "planear",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "activities",
+        "examples": [
+          {
+            "sentence": "We planned our vacation carefully.",
+            "translation": "Nosotros planeamos nuestras vacaciones cuidadosamente.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Duplica la 'n' antes de añadir -ed",
+          "Pronunciación: /plænd/"
+        ]
+      },
+      "study": {
+        "base": "study",
+        "present": "study",
+        "present_third": "studies",
+        "past": "studied",
+        "past_participle": "studied",
+        "future": "will study",
+        "spanish": "estudiar",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "education",
+        "examples": [
+          {
+            "sentence": "She studied all night for the exam.",
+            "translation": "Ella estudió toda la noche para el examen.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Cambia 'y' por 'i' antes de añadir -ed",
+          "Tercera persona: studies (mismo cambio)"
+        ]
+      },
+      "travel": {
+        "base": "travel",
+        "present": "travel",
+        "present_third": "travels",
+        "past": "travelled",
+        "past_participle": "travelled",
+        "future": "will travel",
+        "spanish": "viajar",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "movement",
+        "examples": [
+          {
+            "sentence": "I travelled around Europe last summer.",
+            "translation": "Yo viajé por Europa el verano pasado.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "En inglés británico se duplica la 'l' (travelled)",
+          "En inglés americano: traveled"
+        ]
+      },
+      "cook": {
+        "base": "cook",
+        "present": "cook",
+        "present_third": "cooks",
+        "past": "cooked",
+        "past_participle": "cooked",
+        "future": "will cook",
+        "spanish": "cocinar",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "daily",
+        "examples": [
+          {
+            "sentence": "He cooked dinner for his family.",
+            "translation": "Él cocinó la cena para su familia.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Pronunciación: /kʊkt/"
+        ]
+      },
+      "open": {
+        "base": "open",
+        "present": "open",
+        "present_third": "opens",
+        "past": "opened",
+        "past_participle": "opened",
+        "future": "will open",
+        "spanish": "abrir",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "actions",
+        "examples": [
+          {
+            "sentence": "The store opened at 9 AM.",
+            "translation": "La tienda abrió a las 9 AM.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Solo añade -d porque termina en 'n'",
+          "Pronunciación: /ˈəʊpənd/"
+        ]
+      },
+      "close": {
+        "base": "close",
+        "present": "close",
+        "present_third": "closes",
+        "past": "closed",
+        "past_participle": "closed",
+        "future": "will close",
+        "spanish": "cerrar",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "actions",
+        "examples": [
+          {
+            "sentence": "She closed the door quietly.",
+            "translation": "Ella cerró la puerta silenciosamente.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Solo añade -d porque termina en 'e'",
+          "Pronunciación: /kləʊzd/"
+        ]
+      },
+      "rain": {
+        "base": "rain",
+        "present": "rain",
+        "present_third": "rains",
+        "past": "rained",
+        "past_participle": "rained",
+        "future": "will rain",
+        "spanish": "llover",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "weather",
+        "examples": [
+          {
+            "sentence": "It rained all day yesterday.",
+            "translation": "Llovió todo el día ayer.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Se usa principalmente con 'it' como sujeto"
+        ]
+      },
+      "wait": {
+        "base": "wait",
+        "present": "wait",
+        "present_third": "waits",
+        "past": "waited",
+        "past_participle": "waited",
+        "future": "will wait",
+        "spanish": "esperar",
+        "level": "easy_2",
+        "difficulty": "regular",
+        "category": "actions",
+        "examples": [
+          {
+            "sentence": "We waited for the bus for 30 minutes.",
+            "translation": "Nosotros esperamos el autobús durante 30 minutos.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Suele usarse con 'for': wait for someone"
+        ]
+      },
+      "clean": {
+        "base": "clean",
+        "present": "clean",
+        "present_third": "cleans",
+        "past": "cleaned",
+        "past_participle": "cleaned",
+        "future": "will clean",
+        "spanish": "limpiar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "daily",
+        "examples": [
+          {
+            "sentence": "She cleaned her room yesterday.",
+            "translation": "Ella limpió su habitación ayer.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Pronunciación pasado: /kliːnd/",
+          "No cambia ortográficamente, solo añade -ed"
+        ]
+      },
+      "cry": {
+        "base": "cry",
+        "present": "cry",
+        "present_third": "cries",
+        "past": "cried",
+        "past_participle": "cried",
+        "future": "will cry",
+        "spanish": "llorar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "emotions",
+        "examples": [
+          {
+            "sentence": "The baby cried all night.",
+            "translation": "El bebé lloró toda la noche.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Cambia 'y' por 'i' + -ed en pasado",
+          "Tercera persona: cries (mismo cambio)"
+        ]
+      },
+      "dance": {
+        "base": "dance",
+        "present": "dance",
+        "present_third": "dances",
+        "past": "danced",
+        "past_participle": "danced",
+        "future": "will dance",
+        "spanish": "bailar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "activities",
+        "examples": [
+          {
+            "sentence": "We danced at the party.",
+            "translation": "Bailamos en la fiesta.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Solo añade -d porque termina en 'e'",
+          "Pronunciación: /dænst/"
+        ]
+      },
+      "dream": {
+        "base": "dream",
+        "present": "dream",
+        "present_third": "dreams",
+        "past": "dreamed",
+        "past_participle": "dreamed",
+        "future": "will dream",
+        "spanish": "soñar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "mind",
+        "examples": [
+          {
+            "sentence": "I dreamed about flying.",
+            "translation": "Soñé que volaba.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "En inglés británico también se usa 'dreamt'",
+          "Pronunciación: /driːmd/"
+        ]
+      },
+      "explain": {
+        "base": "explain",
+        "present": "explain",
+        "present_third": "explains",
+        "past": "explained",
+        "past_participle": "explained",
+        "future": "will explain",
+        "spanish": "explicar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "communication",
+        "examples": [
+          {
+            "sentence": "The teacher explained the lesson.",
+            "translation": "El profesor explicó la lección.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Pronunciación: /ɪkˈspleɪnd/"
+        ]
+      },
+      "happen": {
+        "base": "happen",
+        "present": "happen",
+        "present_third": "happens",
+        "past": "happened",
+        "past_participle": "happened",
+        "future": "will happen",
+        "spanish": "suceder",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "events",
+        "examples": [
+          {
+            "sentence": "What happened?",
+            "translation": "¿Qué sucedió?",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Usado frecuentemente en preguntas"
+        ]
+      },
+      "jump": {
+        "base": "jump",
+        "present": "jump",
+        "present_third": "jumps",
+        "past": "jumped",
+        "past_participle": "jumped",
+        "future": "will jump",
+        "spanish": "saltar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "actions",
+        "examples": [
+          {
+            "sentence": "The cat jumped onto the table.",
+            "translation": "El gato saltó a la mesa.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Pronunciación: /dʒʌmpt/"
+        ]
+      },
+      "love": {
+        "base": "love",
+        "present": "love",
+        "present_third": "loves",
+        "past": "loved",
+        "past_participle": "loved",
+        "future": "will love",
+        "spanish": "amar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "emotions",
+        "examples": [
+          {
+            "sentence": "They loved the movie.",
+            "translation": "Ellos amaron la película.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Solo añade -d porque termina en 'e'",
+          "Pronunciación: /lʌvd/"
+        ]
+      },
+      "paint": {
+        "base": "paint",
+        "present": "paint",
+        "present_third": "paints",
+        "past": "painted",
+        "past_participle": "painted",
+        "future": "will paint",
+        "spanish": "pintar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "hobbies",
+        "examples": [
+          {
+            "sentence": "She painted a beautiful landscape.",
+            "translation": "Ella pintó un paisaje hermoso.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Pronunciación: /ˈpeɪntɪd/"
+        ]
+      },
+      "visit": {
+        "base": "visit",
+        "present": "visit",
+        "present_third": "visits",
+        "past": "visited",
+        "past_participle": "visited",
+        "future": "will visit",
+        "spanish": "visitar",
+        "level": "easy_3",
+        "difficulty": "regular",
+        "category": "travel",
+        "examples": [
+          {
+            "sentence": "We visited the museum last week.",
+            "translation": "Visitamos el museo la semana pasada.",
+            "tense": "past"
+          }
+        ],
+        "tips": [
+          "Añade -ed normalmente",
+          "Pronunciación: /ˈvɪzɪtɪd/"
+        ]
+      }
+    },
+    "game_content": {
+      "hints": {
+        "easy_1": [
+          "Recuerda añadir -ed para formar el pasado",
+          "En presente, solo la tercera persona (he/she/it) cambia",
+          "Estos verbos siguen el patrón más común en inglés"
+        ],
+        "easy_2": [
+          "Verbos como 'stop' duplican la última consonante: stopped",
+          "Si termina en 'e', solo añade -d (live → lived)"
+        ],
+        "easy_3": [
+          "Verbos con 'y' final: cry → cried, study → studied"
+        ]
+      },
+      "boss_dialogue": {
+        "easy_1": {
+          "introduction": "I'm the Past Tense Master! Beat me by conjugating these regular verbs correctly!",
+          "victory": "You've mastered the regular verbs! You can now advance to level 2!",
+          "defeat": "Practice more the -ed ending and try again!"
+        },
+        "easy_2": {
+          "introduction": "¡Soy el Maestro de los Verbos Regulares! Conjuga estos verbos correctamente.",
+          "victory": "¡Dominaste las excepciones de los verbos regulares!",
+          "defeat": "Practica más las reglas ortográficas."
+        },
+        "easy_3": {
+          "introduction": "¡Soy el Experto en Pronunciación! Demuestra que dominas los sonidos del pasado.",
+          "victory": "¡Increíble! Ahora suenas como un nativo.",
+          "defeat": "Sigue practicando los verbos con terminaciones difíciles."
+        }
+      }
+    }
+  }
