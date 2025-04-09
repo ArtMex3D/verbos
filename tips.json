@@ -186,6 +186,645 @@
         "Estos verbos son comunes en contextos formales y profesionales.",
         "¡Has completado todos los niveles de verbos regulares! Es hora de practicar y usarlos."
       ]
+    },
+  "levels": {
+    "medium_11": {
+      "name": "Modo Medio - Nivel 11",
+      "description": "Verbos irregulares fundamentales (Grupo 1: Ser, Tener, Hacer, Ir...)",
+      "difficulty": "medium",
+      "number": 11,
+      "verbs_required": 7,
+      "mastery_percentage": 85,
+      "unlock_condition": "complete_easy_10",
+      "next_level": "medium_12",
+      "tips": [
+        "¡Bienvenido al Modo Medio! Aquí los pasados NO siguen la regla '-ed'.",
+        "Estos son los irregulares más básicos y comunes ('be', 'have', 'do', 'go'). ¡Apréndelos bien!",
+        "Fíjate que el Pasado Simple y el Participio Pasado pueden ser diferentes.",
+        "El Presente y Futuro Simple generalmente siguen las reglas normales (ej. he goes, I will go)."
+      ]
+    },
+    "medium_12": {
+      "name": "Modo Medio - Nivel 12",
+      "description": "Irregulares esenciales (Grupo 2: Conseguir, Hacer, Saber...)",
+      "difficulty": "medium",
+      "number": 12,
+      "verbs_required": 7,
+      "mastery_percentage": 85,
+      "unlock_condition": "complete_medium_11",
+      "next_level": "medium_13",
+      "tips": [
+        "Continuamos con verbos irregulares muy frecuentes.",
+        "Observa las formas 'get/got/gotten(got)', 'make/made/made', 'know/knew/known'.",
+        "Algunos tienen el Participio Pasado igual al Pasado Simple, ¡pero otros no!",
+        "Practica creando frases sobre lo que 'conseguiste' (got) o 'hiciste' (made) ayer."
+      ]
+    },
+    "medium_13": {
+      "name": "Modo Medio - Nivel 13",
+      "description": "Irregulares comunes (Grupo 3: Decir, Sentir, Poner...)",
+      "difficulty": "medium",
+      "number": 13,
+      "verbs_required": 7,
+      "mastery_percentage": 85,
+      "unlock_condition": "complete_medium_12",
+      "next_level": "medium_14",
+      "tips": [
+        "Verbos como 'put' tienen las tres formas iguales (put/put/put). ¡Son más fáciles!",
+        "Otros cambian mucho: 'feel/felt/felt', 'leave/left/left'.",
+        "Memoriza las tres formas principales de cada verbo.",
+        "Usa 'tell/told/told' para contar historias en pasado."
+      ]
+    },
+    "medium_14": {
+      "name": "Modo Medio - Nivel 14",
+      "description": "Irregulares frecuentes (Grupo 4: Dejar, Empezar, Comer...)",
+      "difficulty": "medium",
+      "number": 14,
+      "verbs_required": 7,
+      "mastery_percentage": 85,
+      "unlock_condition": "complete_medium_13",
+      "next_level": "medium_15",
+      "tips": [
+        "'Let' es otro verbo con las tres formas iguales (let/let/let).",
+        "Patrones con cambio vocálico: 'begin/began/begun', 'eat/ate/eaten'.",
+        "Diferencia 'hear/heard/heard' (oír) de 'listen' (escuchar, regular).",
+        "¿Cómo dirías 'Empecé a correr' (I began running / I began to run)?"
+      ]
+    },
+    "medium_15": {
+      "name": "Modo Medio - Nivel 15",
+      "description": "Irregulares importantes (Grupo 5: Escribir, Sentarse, Perder...)",
+      "difficulty": "medium",
+      "number": 15,
+      "verbs_required": 7,
+      "mastery_percentage": 85,
+      "unlock_condition": "complete_medium_14",
+      "next_level": "medium_16",
+      "tips": [
+        "Más patrones: 'write/wrote/written', 'sit/sat/sat', 'stand/stood/stood'.",
+        "Verbos relacionados con dinero: 'lose/lost/lost', 'pay/paid/paid'.",
+        "'Meet/met/met' se usa para conocer gente o encontrarse.",
+        "¡Último nivel con 85% de maestría! ¡Vas muy bien!"
+      ]
+    },
+     "medium_16": {
+      "name": "Modo Medio - Nivel 16",
+      "description": "Irregulares de comunicación y crecimiento (Grupo 6)",
+      "difficulty": "medium",
+      "number": 16,
+      "verbs_required": 7,
+      "mastery_percentage": 75,
+      "unlock_condition": "complete_medium_15",
+      "next_level": "medium_17",
+      "tips": [
+        "La maestría requerida baja a 75%. ¡Nuevo desafío!",
+        "Verbos clave: 'understand/understood/understood', 'speak/spoke/spoken'.",
+        "'Read' se escribe igual, ¡pero se pronuncia diferente en pasado y participio (/red/)!",
+        "Piensa en cómo 'ganaste' (won) o 'gastaste' (spent) algo."
+      ]
+    },
+     "medium_17": {
+      "name": "Modo Medio - Nivel 17",
+      "description": "Irregulares de transacciones y construcción (Grupo 7)",
+      "difficulty": "medium",
+      "number": 17,
+      "verbs_required": 7,
+      "mastery_percentage": 75,
+      "unlock_condition": "complete_medium_16",
+      "next_level": "medium_18",
+      "tips": [
+        "Verbos como 'buy/bought/bought' y 'teach/taught/taught' tienen un patrón similar en pasado/participio.",
+        "'Send/sent/sent', 'build/built/built', 'sell/sold/sold' son otros patrones comunes.",
+        "'Cut' es otro verbo fácil: cut/cut/cut.",
+        "¡Cuidado con 'fall/fell/fallen'!"
+      ]
+    },
+    "medium_18": {
+      "name": "Modo Medio - Nivel 18",
+      "description": "Irregulares de acciones y estados (Grupo 8)",
+      "difficulty": "medium",
+      "number": 18,
+      "verbs_required": 7,
+      "mastery_percentage": 75,
+      "unlock_condition": "complete_medium_17",
+      "next_level": "medium_19",
+      "tips": [
+        "Patrones diversos: 'drive/drove/driven', 'break/broke/broken', 'wear/wore/worn'.",
+        "Cambios vocálicos: 'drink/drank/drunk', 'sleep/slept/slept'.",
+        "'Hit' tiene las tres formas iguales: hit/hit/hit.",
+        "Piensa en qué ropa 'llevabas puesta' (wore) ayer."
+      ]
+    },
+    "medium_19": {
+      "name": "Modo Medio - Nivel 19",
+      "description": "Irregulares de memoria y sensaciones (Grupo 9)",
+      "difficulty": "medium",
+      "number": 19,
+      "verbs_required": 7,
+      "mastery_percentage": 75,
+      "unlock_condition": "complete_medium_18",
+      "next_level": "medium_20",
+      "tips": [
+        "Verbos importantes: 'forget/forgot/forgotten', 'forgive/forgave/forgiven'.",
+        "Patrones '-eze/-oze/-ozen': freeze/froze/frozen.",
+        "'Hide/hid/hidden' y 'hold/held/held' son muy útiles.",
+        "'Hurt' y 'lay' (poner/colocar) son irregulares clave: hurt/hurt/hurt, lay/laid/laid."
+      ]
+    },
+    "medium_20": {
+      "name": "Modo Medio - Nivel 20",
+      "description": "Irregulares de movimiento y cambio (Grupo 10)",
+      "difficulty": "medium",
+      "number": 20,
+      "verbs_required": 7,
+      "mastery_percentage": 75,
+      "unlock_condition": "complete_medium_19",
+      "next_level": "medium_21",
+      "tips": [
+        "Cuidado con 'lie' (tumbarse): lie/lay/lain. ¡No confundir con 'lay' (poner) ni con 'lie' (mentir, regular)!",
+        "Patrones '-ead/-ed/-ed': lead/led/led.",
+        "Patrones '-ight/-ought/-ought': light/lit(lighted)/lit(lighted).",
+        "Cambios vocálicos: ride/rode/ridden, ring/rang/rung, rise/rose/risen.",
+        "¡Último nivel con 75%!"
+      ]
+    },
+    "medium_21": {
+       "name": "Modo Medio - Nivel 21",
+       "description": "Irregulares con cambios vocálicos (Grupo 11: shake, sing...)",
+       "difficulty": "medium",
+       "number": 21,
+       "verbs_required": 6,
+       "mastery_percentage": 60,
+       "unlock_condition": "complete_medium_20",
+       "next_level": "medium_22",
+       "tips": [
+         "Maestría requerida: 60%. ¡Entramos en los irregulares menos comunes!",
+         "Patrones i->a->u: sing/sang/sung, sink/sank/sunk.",
+         "Otros cambios: shake/shook/shaken, shoot/shot/shot.",
+         "'Shine' puede ser shine/shone/shone (brillar) o shine/shined/shined (lustrar). Usaremos 'shone'.",
+         "'Shut' es fácil: shut/shut/shut."
+       ]
+     },
+     "medium_22": {
+       "name": "Modo Medio - Nivel 22",
+       "description": "Irregulares diversos (Grupo 12: slide, steal...)",
+       "difficulty": "medium",
+       "number": 22,
+       "verbs_required": 6,
+       "mastery_percentage": 60,
+       "unlock_condition": "complete_medium_21",
+       "next_level": "medium_23",
+       "tips": [
+         "Verbos interesantes: slide/slid/slid, steal/stole/stolen.",
+         "Patrones '-ick/-uck/-uck': stick/stuck/stuck.",
+         "Patrones '-ing/-ang/-ung': sting/stung/stung.",
+         "'Strike/struck/struck(stricken)' tiene dos participios posibles.",
+         "'Swim/swam/swum' es un clásico irregular de cambio vocálico."
+       ]
+     },
+     "medium_23": {
+       "name": "Modo Medio - Nivel 23",
+       "description": "Irregulares de acciones variadas (Grupo 13: swear, sweep...)",
+       "difficulty": "medium",
+       "number": 23,
+       "verbs_required": 6,
+       "mastery_percentage": 60,
+       "unlock_condition": "complete_medium_22",
+       "next_level": "medium_24",
+       "tips": [
+          "Patrones: swear/swore/sworn, tear/tore/torn, wear/wore/worn (ya visto, refuerzo).",
+          "Patrones '-eep/-ept/-ept': sweep/swept/swept, weep/wept/wept.",
+          "Cambios vocálicos: swing/swung/swung, wake/woke/woken.",
+          "'Throw/threw/thrown' es esencial para acciones."
+       ]
+     },
+     "medium_24": {
+       "name": "Modo Medio - Nivel 24",
+       "description": "Irregulares menos frecuentes (Grupo 14: bind, bleed...)",
+       "difficulty": "medium",
+       "number": 24,
+       "verbs_required": 6,
+       "mastery_percentage": 60,
+       "unlock_condition": "complete_medium_23",
+       "next_level": "medium_25",
+       "tips": [
+         "Estos son menos comunes, pero útiles.",
+         "Patrones '-ind/-ound/-ound': bind/bound/bound.",
+         "Patrones '-eed/-ed/-ed': bleed/bled/bled, breed/bred/bred.",
+         "Verbos con formas iguales: cast/cast/cast, cost/cost/cost.",
+         "Cambio vocálico: blow/blew/blown."
+       ]
+     },
+      "medium_25": {
+       "name": "Modo Medio - Nivel 25",
+       "description": "Desafío final de irregulares (Grupo 15: deal, dig...)",
+       "difficulty": "medium",
+       "number": 25,
+       "verbs_required": 6,
+       "mastery_percentage": 60,
+       "unlock_condition": "complete_medium_24",
+       "next_level": "none", // Fin del modo medio
+       "tips": [
+          "¡Último nivel! Demuestra tu dominio.",
+          "Patrones '-eal/-ealt/-ealt': deal/dealt/dealt.",
+          "Patrones '-ig/-ug/-ug': dig/dug/dug.",
+          "Patrones '-eed/-ed/-ed': feed/fed/fed.",
+          "Formas únicas: draw/drew/drawn, fight/fought/fought.",
+          "'Dream' tiene dos formas de pasado/participio: dreamed (regular) o dreamt (irregular). Usaremos 'dreamt'."
+       ]
+     },
+    "hard_26": {
+      "name": "Modo Difícil - Nivel 26",
+      "description": "Introducción a Phrasal Verbs básicos (Acciones diarias)",
+      "difficulty": "hard",
+      "number": 26,
+      "verbs_required": 10,
+      "mastery_percentage": 60,
+      "unlock_condition": "complete_medium_25",
+      "next_level": "hard_27",
+      "tips": [
+        "¡Bienvenido al Modo Difícil! El desafío ahora son los Phrasal Verbs (Verbo + Partícula).",
+        "Una partícula (up, down, on, off...) puede cambiar completamente el significado del verbo base.",
+        "Empezamos con phrasal verbs muy comunes relacionados con rutinas.",
+        "Fíjate si son separables o inseparables (¿se puede poner el objeto en medio?)."
+      ]
+    },
+    "hard_27": {
+      "name": "Modo Difícil - Nivel 27",
+      "description": "Phrasal Verbs comunes (Decisiones y Acciones)",
+      "difficulty": "hard",
+      "number": 27,
+      "verbs_required": 10,
+      "mastery_percentage": 60,
+      "unlock_condition": "complete_hard_26",
+      "next_level": "hard_28",
+      "tips": [
+        "'Give up' (rendirse) es muy diferente de 'give' (dar).",
+        "'Look up' puede significar buscar información o mejorar.",
+        "Presta atención al contexto para entender el significado.",
+        "Muchos phrasal verbs tienen significados literales y figurados."
+      ]
+    },
+    "hard_28": {
+      "name": "Modo Difícil - Nivel 28",
+      "description": "Phrasal Verbs con 'Up' y 'Down'",
+      "difficulty": "hard",
+      "number": 28,
+      "verbs_required": 10,
+      "mastery_percentage": 60,
+      "unlock_condition": "complete_hard_27",
+      "next_level": "hard_29",
+      "tips": [
+        "Las partículas 'up' y 'down' son muy comunes y crean muchos significados.",
+        "'Up' a menudo indica completar algo (eat up), incrementar (turn up) o aparecer (show up).",
+        "'Down' puede indicar reducir (turn down), calmarse (calm down) o escribir (write down).",
+        "Verifica si son separables: 'Turn the music up' vs 'Turn up the music'."
+      ]
+    },
+    "hard_29": {
+      "name": "Modo Difícil - Nivel 29",
+      "description": "Phrasal Verbs con 'On' y 'Off'",
+      "difficulty": "hard",
+      "number": 29,
+      "verbs_required": 10,
+      "mastery_percentage": 60,
+      "unlock_condition": "complete_hard_28",
+      "next_level": "hard_30",
+      "tips": [
+        "'On' y 'Off' se usan mucho con aparatos (turn on/off) y ropa (put on/take off).",
+        "'On' también puede significar continuar (go on) o depender (depend on).",
+        "'Off' puede significar posponer (put off), cancelar (call off) o irse (set off).",
+        "La separabilidad es importante: 'Put your coat on' / 'Put on your coat'."
+      ]
+    },
+    "hard_30": {
+      "name": "Modo Difícil - Nivel 30",
+      "description": "Phrasal Verbs con 'In' y 'Out'",
+      "difficulty": "hard",
+      "number": 30,
+      "verbs_required": 10,
+      "mastery_percentage": 60,
+      "unlock_condition": "complete_hard_29",
+      "next_level": "hard_31",
+      "tips": [
+        "'In' a menudo se relaciona con entrar o participar (check in, join in).",
+        "'Out' puede significar salir, eliminar (cross out), descubrir (find out) o extinguirse (put out).",
+        "Algunos son separables ('fill this form in') y otros no ('check in at the hotel').",
+        "¡Último nivel con 60% de maestría!"
+      ]
+    },
+     "hard_31": {
+      "name": "Modo Difícil - Nivel 31",
+      "description": "Phrasal Verbs con 'Away' y 'Back'",
+      "difficulty": "hard",
+      "number": 31,
+      "verbs_required": 10,
+      "mastery_percentage": 55,
+      "unlock_condition": "complete_hard_30",
+      "next_level": "hard_32",
+      "tips": [
+        "La maestría baja a 55%. ¡Más atención!",
+        "'Away' sugiere distancia o desaparición (go away, put away, give away).",
+        "'Back' indica retorno o respuesta (come back, give back, call back).",
+        "Muchos con 'back' son separables si el objeto es un pronombre ('give it back')."
+      ]
+    },
+    "hard_32": {
+      "name": "Modo Difícil - Nivel 32",
+      "description": "Phrasal Verbs con 'Over' y 'Through'",
+      "difficulty": "hard",
+      "number": 32,
+      "verbs_required": 10,
+      "mastery_percentage": 55,
+      "unlock_condition": "complete_hard_31",
+      "next_level": "hard_33",
+      "tips": [
+        "'Over' puede significar revisar (go over), superar (get over) o terminar (be over).",
+        "'Through' implica completar algo difícil (get through), examinar (look through) o conexión (put through).",
+        "Fíjate en los diferentes significados que puede tener 'go over'."
+      ]
+    },
+     "hard_33": {
+      "name": "Modo Difícil - Nivel 33",
+      "description": "Phrasal Verbs con 'Around' y 'About'",
+      "difficulty": "hard",
+      "number": 33,
+      "verbs_required": 10,
+      "mastery_percentage": 55,
+      "unlock_condition": "complete_hard_32",
+      "next_level": "hard_34",
+      "tips": [
+        "'Around'/'About' a menudo indican movimiento sin dirección fija (walk around), aproximación (come about) o tema (ask about).",
+        "También pueden significar 'estar disponible' o 'existir' (be around).",
+        "'Bring about' significa causar.",
+        "Muchos de estos son intransitivos (no llevan objeto directo)."
+      ]
+    },
+     "hard_34": {
+      "name": "Modo Difícil - Nivel 34",
+      "description": "Phrasal Verbs con 'For' y 'With'",
+      "difficulty": "hard",
+      "number": 34,
+      "verbs_required": 10,
+      "mastery_percentage": 55,
+      "unlock_condition": "complete_hard_33",
+      "next_level": "hard_35",
+      "tips": [
+        "'For' a menudo indica búsqueda (look for) o propósito (call for).",
+        "'With' puede indicar acuerdo (go along with), manejo (deal with) o compañía (come with).",
+        "'Look for' (buscar) es diferente de 'look after' (cuidar).",
+        "'Deal with' es esencial para resolver problemas."
+      ]
+    },
+     "hard_35": {
+      "name": "Modo Difícil - Nivel 35",
+      "description": "Phrasal Verbs con 'To' y 'At'",
+      "difficulty": "hard",
+      "number": 35,
+      "verbs_required": 10,
+      "mastery_percentage": 55,
+      "unlock_condition": "complete_hard_34",
+      "next_level": "hard_36",
+      "tips": [
+        "'To' a menudo indica dirección, acuerdo o adición (add up to, look forward to, object to).",
+        "'At' puede indicar dirección de mirada/ataque (look at, shout at, laugh at) o intento (get at).",
+        "¡Ojo! 'Look forward to' va seguido de gerundio (-ing) o sustantivo.",
+        "¡Último nivel con 55%!"
+      ]
+    },
+    "hard_36": {
+      "name": "Modo Difícil - Nivel 36",
+      "description": "Phrasal Verbs Separables Comunes",
+      "difficulty": "hard",
+      "number": 36,
+      "verbs_required": 10,
+      "mastery_percentage": 50,
+      "unlock_condition": "complete_hard_35",
+      "next_level": "hard_37",
+      "tips": [
+        "Maestría baja a 50%. ¡Estos requieren más práctica!",
+        "Verbos separables: el objeto puede ir ANTES o DESPUÉS de la partícula.",
+        "PERO: Si el objeto es un pronombre (it, them, me, him...), DEBE ir en medio.",
+        "Ejemplo: 'Pick up the book' / 'Pick the book up' / 'Pick it up' (¡NO 'Pick up it'!)."
+      ]
+    },
+     "hard_37": {
+      "name": "Modo Difícil - Nivel 37",
+      "description": "Más Phrasal Verbs Separables",
+      "difficulty": "hard",
+      "number": 37,
+      "verbs_required": 10,
+      "mastery_percentage": 50,
+      "unlock_condition": "complete_hard_36",
+      "next_level": "hard_38",
+      "tips": [
+        "Seguimos practicando la separabilidad.",
+        "'Figure out' (resolver), 'give back' (devolver), 'let down' (decepcionar)...",
+        "Recuerda la regla del pronombre: 'Figure it out', 'Give it back', 'Let me down'."
+      ]
+    },
+     "hard_38": {
+      "name": "Modo Difícil - Nivel 38",
+      "description": "Phrasal Verbs Inseparables Comunes",
+      "difficulty": "hard",
+      "number": 38,
+      "verbs_required": 10,
+      "mastery_percentage": 50,
+      "unlock_condition": "complete_hard_37",
+      "next_level": "hard_39",
+      "tips": [
+        "Verbos inseparables: El objeto (si lo hay) SIEMPRE va DESPUÉS de la partícula.",
+        "Nunca se puede poner el objeto en medio.",
+        "Ejemplos: 'Look after the baby' (¡NO 'Look the baby after'!), 'Get over the illness'.",
+        "Muchos verbos intransitivos (sin objeto) son inseparables por naturaleza (get up, grow up)."
+      ]
+    },
+     "hard_39": {
+      "name": "Modo Difícil - Nivel 39",
+      "description": "Más Phrasal Verbs Inseparables",
+      "difficulty": "hard",
+      "number": 39,
+      "verbs_required": 10,
+      "mastery_percentage": 50,
+      "unlock_condition": "complete_hard_38",
+      "next_level": "hard_40",
+      "tips": [
+        "Continuamos con inseparables: 'Agree with', 'belong to', 'run into' (toparse con)...",
+        "Recuerda: Objeto siempre al final.",
+        "'Run into someone' vs 'Run over something' (atropellar)."
+      ]
+    },
+     "hard_40": {
+      "name": "Modo Difícil - Nivel 40",
+      "description": "Phrasal Verbs con Múltiples Significados (Parte 1)",
+      "difficulty": "hard",
+      "number": 40,
+      "verbs_required": 10,
+      "mastery_percentage": 50,
+      "unlock_condition": "complete_hard_39",
+      "next_level": "hard_41",
+      "tips": [
+        "Muchos phrasal verbs tienen varios significados distintos.",
+        "El contexto es ESENCIAL para entender cuál se está usando.",
+        "Ejemplo: 'Take off' (quitarse ropa, despegar avión, irse rápido...).",
+        "¡Último nivel con 50%!"
+      ]
+    },
+    "hard_41": {
+      "name": "Modo Difícil - Nivel 41",
+      "description": "Phrasal Verbs con Múltiples Significados (Parte 2)",
+      "difficulty": "hard",
+      "number": 41,
+      "verbs_required": 10,
+      "mastery_percentage": 45,
+      "unlock_condition": "complete_hard_40",
+      "next_level": "hard_42",
+      "tips": [
+        "Maestría baja a 45%. ¡El desafío aumenta!",
+        "Continuamos con verbos polisémicos: 'Bring up' (mencionar tema, criar niño, vomitar...).",
+        "'Make up' (inventar, reconciliarse, maquillarse...).",
+        "Presta atención a los ejemplos para ver los diferentes usos."
+      ]
+    },
+    "hard_42": {
+      "name": "Modo Difícil - Nivel 42",
+      "description": "Phrasal Verbs de Tres Partes (Parte 1)",
+      "difficulty": "hard",
+      "number": 42,
+      "verbs_required": 10,
+      "mastery_percentage": 45,
+      "unlock_condition": "complete_hard_41",
+      "next_level": "hard_43",
+      "tips": [
+        "¡Ahora con tres partes! Verbo + Partícula + Preposición.",
+        "Normalmente son INSEPARABLES.",
+        "Ejemplos: 'look forward to' (+ gerundio/sustantivo), 'put up with', 'get along with'.",
+        "El objeto suele ir después de la preposición final."
+      ]
+    },
+     "hard_43": {
+      "name": "Modo Difícil - Nivel 43",
+      "description": "Phrasal Verbs de Tres Partes (Parte 2)",
+      "difficulty": "hard",
+      "number": 43,
+      "verbs_required": 10,
+      "mastery_percentage": 45,
+      "unlock_condition": "complete_hard_42",
+      "next_level": "hard_44",
+      "tips": [
+        "Más verbos de tres partes: 'catch up with', 'come up with', 'get away with'.",
+        "Fíjate en sus significados idiomáticos.",
+        "'Come up with an idea' (ocurrirse una idea)."
+      ]
+    },
+    "hard_44": {
+      "name": "Modo Difícil - Nivel 44",
+      "description": "Phrasal Verbs Relacionados con el Trabajo",
+      "difficulty": "hard",
+      "number": 44,
+      "verbs_required": 10,
+      "mastery_percentage": 45,
+      "unlock_condition": "complete_hard_43",
+      "next_level": "hard_45",
+      "tips": [
+        "Phrasal verbs comunes en el entorno laboral.",
+        "'Take on' (contratar, aceptar tarea), 'carry out' (realizar), 'burn out' (agotarse).",
+        "'Call off' (cancelar reunión), 'step down' (dimitir)."
+      ]
+    },
+    "hard_45": {
+      "name": "Modo Difícil - Nivel 45",
+      "description": "Phrasal Verbs Relacionados con Relaciones",
+      "difficulty": "hard",
+      "number": 45,
+      "verbs_required": 10,
+      "mastery_percentage": 45,
+      "unlock_condition": "complete_hard_44",
+      "next_level": "hard_46",
+      "tips": [
+        "Phrasal verbs usados para hablar de relaciones personales.",
+        "'Ask out' (invitar a salir), 'break up' (romper relación), 'get along with' (llevarse bien).",
+        "'Make up' (reconciliarse), 'drift apart' (distanciarse).",
+        "¡Último nivel con 45%!"
+      ]
+    },
+     "hard_46": {
+      "name": "Modo Difícil - Nivel 46",
+      "description": "Phrasal Verbs Menos Comunes (Grupo A)",
+      "difficulty": "hard",
+      "number": 46,
+      "verbs_required": 10,
+      "mastery_percentage": 40,
+      "unlock_condition": "complete_hard_45",
+      "next_level": "hard_47",
+      "tips": [
+        "Maestría final: 40%. ¡Solo para expertos!",
+        "Entramos en phrasal verbs más específicos o menos frecuentes.",
+        "'Account for' (explicar), 'back down' (echarse atrás), 'carry on' (continuar).",
+        "Intenta usarlos en frases complejas."
+      ]
+    },
+     "hard_47": {
+      "name": "Modo Difícil - Nivel 47",
+      "description": "Phrasal Verbs Menos Comunes (Grupo B)",
+      "difficulty": "hard",
+      "number": 47,
+      "verbs_required": 10,
+      "mastery_percentage": 40,
+      "unlock_condition": "complete_hard_46",
+      "next_level": "hard_48",
+      "tips": [
+        "Continuamos con verbos menos habituales.",
+        "'Die down' (apagarse gradualmente), 'do away with' (eliminar), 'fall behind' (quedarse atrás).",
+        "El contexto es aún más importante para estos."
+      ]
+    },
+     "hard_48": {
+      "name": "Modo Difícil - Nivel 48",
+      "description": "Phrasal Verbs Menos Comunes (Grupo C)",
+      "difficulty": "hard",
+      "number": 48,
+      "verbs_required": 10,
+      "mastery_percentage": 40,
+      "unlock_condition": "complete_hard_47",
+      "next_level": "hard_49",
+      "tips": [
+        "Más phrasal verbs para enriquecer tu vocabulario.",
+        "'Get by' (apañárselas), 'hold on' (esperar), 'iron out' (resolver problemas).",
+        "Muchos tienen significados muy idiomáticos."
+      ]
+    },
+     "hard_49": {
+      "name": "Modo Difícil - Nivel 49",
+      "description": "Phrasal Verbs Menos Comunes (Grupo D)",
+      "difficulty": "hard",
+      "number": 49,
+      "verbs_required": 10,
+      "mastery_percentage": 40,
+      "unlock_condition": "complete_hard_48",
+      "next_level": "hard_50",
+      "tips": [
+        "Recta final de los phrasal verbs.",
+        "'Pass away' (fallecer), 'rule out' (descartar), 'settle down' (asentarse).",
+        "Fíjate en si son formales o informales."
+      ]
+    },
+    "hard_50": {
+      "name": "Modo Difícil - Nivel 50",
+      "description": "Desafío Final de Phrasal Verbs",
+      "difficulty": "hard",
+      "number": 50,
+      "verbs_required": 10,
+      "mastery_percentage": 40,
+      "unlock_condition": "complete_hard_49",
+      "next_level": "none", // Fin del modo difícil
+      "tips": [
+        "¡Último nivel! Phrasal verbs complejos o con matices.",
+        "'Stand for' (representar, tolerar), 'take after' (parecerse a), 'turn out' (resultar).",
+        "¡Has dominado una de las partes más difíciles del inglés!",
+        "Sigue practicando y buscando nuevos phrasal verbs."
+      ]
     }
   },
   "verbs": {
