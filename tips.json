@@ -15239,6 +15239,2826 @@
       },
       "tips": ["Recuerda grow/grew/grown.", "Inseparable.", "'Grown-up' (con guion o junto) es el sustantivo/adjetivo 'adulto'."]
     },
+    "hurry_up": {
+      "base_verb": "hurry",
+      "particle": "up",
+      "phrasal_verb": "hurry up",
+      "present_third": "hurries up",
+      "past": "hurried up",
+      "past_participle": "hurried up",
+      "gerund": "hurrying up",
+      "spanish": "darse prisa, apurarse",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'hurry'. He/She/It: 'hurries up'.",
+          "example_sentence": "Hurry up! We're late.",
+          "example_translation_es": "¡Date prisa! Llegamos tarde."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'hurry' ('hurried'). Pasado: 'hurried up'.",
+          "example_sentence": "She hurried up to finish.",
+          "example_translation_es": "Ella se dio prisa para terminar."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'hurry' ('hurried'). Participio: 'hurried up'.",
+           "example_sentence": "If you hadn't hurried up, we would have missed it.",
+           "example_translation_es": "Si no te hubieras dado prisa, nos lo habríamos perdido."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'hurry up'.",
+          "example_sentence": "You'll have to hurry up.",
+          "example_translation_es": "Tendrás que darte prisa."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'hurrying up'.",
+          "example_sentence": "Why are they hurrying up?",
+          "example_translation_es": "¿Por qué se están dando prisa?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'hurried up'.",
+          "example_sentence": "He has hurried up and left.",
+          "example_translation_es": "Se ha dado prisa y se ha ido."
+        }
+      },
+      "tips": ["Recuerda hurry/hurried/hurried.", "Inseparable.", "Imperativo común: Hurry up!"]
+    },
+    "keep_on": {
+      "base_verb": "keep",
+      "particle": "on",
+      "phrasal_verb": "keep on",
+      "present_third": "keeps on",
+      "past": "kept on",
+      "past_participle": "kept on",
+      "gerund": "keeping on",
+      "spanish": "continuar, seguir (haciendo algo, a pesar de dificultad)",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'keep'. He/She/It: 'keeps on'. Seguido de gerundio (-ing).",
+          "example_sentence": "She keeps on trying.",
+          "example_translation_es": "Ella sigue intentando."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'keep' ('kept'). Pasado: 'kept on'. Seguido de gerundio.",
+          "example_sentence": "He kept on working late.",
+          "example_translation_es": "Él continuó trabajando hasta tarde."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'keep' ('kept'). Participio: 'kept on'. Seguido de gerundio.",
+           "example_sentence": "They have kept on complaining.",
+           "example_translation_es": "Han seguido quejándose."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'keep on'. Seguido de gerundio.",
+          "example_sentence": "We will keep on fighting.",
+          "example_translation_es": "Seguiremos luchando."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'keeping on'. Seguido de gerundio.",
+          "example_sentence": "Why are you keeping on asking?",
+          "example_translation_es": "¿Por qué sigues preguntando?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'kept on'. Seguido de gerundio.",
+          "example_sentence": "She has kept on smiling through it all.",
+          "example_translation_es": "Ella ha seguido sonriendo a pesar de todo."
+        }
+      },
+      "tips": ["Recuerda keep/kept/kept.", "Inseparable.", "Siempre seguido de un gerundio (-ing form). Similar a 'carry on' y 'go on'."]
+    },
+    "listen_for": {
+      "base_verb": "listen",
+      "particle": "for",
+      "phrasal_verb": "listen for",
+      "present_third": "listens for",
+      "past": "listened for",
+      "past_participle": "listened for",
+      "gerund": "listening for",
+      "spanish": "escuchar atentamente (esperando un sonido específico)",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "senses",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'listen'. He/She/It: 'listens for'.",
+          "example_sentence": "He listens for the doorbell.",
+          "example_translation_es": "Él escucha atentamente (esperando) el timbre."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'listen' ('listened'). Pasado: 'listened for'.",
+          "example_sentence": "She listened for footsteps.",
+          "example_translation_es": "Ella escuchó atentamente esperando oír pasos."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'listen' ('listened'). Participio: 'listened for'.",
+           "example_sentence": "Have you listened for the results?",
+           "example_translation_es": "¿Has estado atento a (esperando oír) los resultados?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'listen for'.",
+          "example_sentence": "We will listen for the announcement.",
+          "example_translation_es": "Estaremos atentos (escuchando) al anuncio."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'listening for'.",
+          "example_sentence": "I am listening for the phone.",
+          "example_translation_es": "Estoy escuchando (atento por si suena) el teléfono."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'listened for'.",
+          "example_sentence": "He has listened for any sign.",
+          "example_translation_es": "Ha estado atento a cualquier señal."
+        }
+      },
+      "tips": ["Verbo base 'listen' es regular.", "Inseparable.", "Implica esperar oír algo específico."]
+    },
+    "live_on": {
+      "base_verb": "live",
+      "particle": "on",
+      "phrasal_verb": "live on",
+      "present_third": "lives on",
+      "past": "lived on",
+      "past_participle": "lived on",
+      "gerund": "living on",
+      "spanish": "subsistir con (dinero), alimentarse de, perdurar (memoria)",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "state",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'live'. He/She/It: 'lives on'.",
+          "example_sentence": "He lives on a small pension. / Pandas live on bamboo.",
+          "example_translation_es": "Él subsiste con una pequeña pensión. / Los pandas se alimentan de bambú."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'live' ('lived'). Pasado: 'lived on'.",
+          "example_sentence": "They lived on bread and water.",
+          "example_translation_es": "Subsistieron a base de pan y agua."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'live' ('lived'). Participio: 'lived on'.",
+           "example_sentence": "His memory has lived on.",
+           "example_translation_es": "Su memoria ha perdurado."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'live on'.",
+          "example_sentence": "Can you live on that salary?",
+          "example_translation_es": "¿Puedes subsistir con ese salario?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'living on'.",
+          "example_sentence": "She is living on savings.",
+          "example_translation_es": "Ella está viviendo de sus ahorros."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'lived on'.",
+          "example_sentence": "They have lived on this farm for generations.",
+          "example_translation_es": "Han vivido en esta granja durante generaciones (subsistido de ella)."
+        }
+      },
+      "tips": ["Verbo base 'live' es regular.", "Inseparable."]
+    },
+     "move_on": {
+      "base_verb": "move",
+      "particle": "on",
+      "phrasal_verb": "move on",
+      "present_third": "moves on",
+      "past": "moved on",
+      "past_participle": "moved on",
+      "gerund": "moving on",
+      "spanish": "pasar a otra cosa, seguir adelante (superar algo)",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'move'. He/She/It: 'moves on'.",
+          "example_sentence": "Let's move on to the next topic.",
+          "example_translation_es": "Pasemos al siguiente tema."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'move' ('moved'). Pasado: 'moved on'.",
+          "example_sentence": "She moved on after the breakup.",
+          "example_translation_es": "Ella siguió adelante después de la ruptura."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'move' ('moved'). Participio: 'moved on'.",
+           "example_sentence": "Have you moved on from that issue?",
+           "example_translation_es": "¿Has superado ya ese asunto?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'move on'.",
+          "example_sentence": "We will move on shortly.",
+          "example_translation_es": "Continuaremos en breve."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'moving on'.",
+          "example_sentence": "He is moving on to a new job.",
+          "example_translation_es": "Él va a pasar a un nuevo trabajo."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'moved on'.",
+          "example_sentence": "Life has moved on.",
+          "example_translation_es": "La vida ha seguido adelante."
+        }
+      },
+      "tips": ["Verbo base 'move' es regular.", "Inseparable."]
+    },
+    "move_in": {
+      "base_verb": "move",
+      "particle": "in",
+      "phrasal_verb": "move in",
+      "present_third": "moves in",
+      "past": "moved in",
+      "past_participle": "moved in",
+      "gerund": "moving in",
+      "spanish": "mudarse a (vivir en un lugar nuevo)",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "movement",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'move'. He/She/It: 'moves in'.",
+          "example_sentence": "The new neighbors move in today.",
+          "example_translation_es": "Los nuevos vecinos se mudan hoy."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'move' ('moved'). Pasado: 'moved in'.",
+          "example_sentence": "She moved in last week.",
+          "example_translation_es": "Ella se mudó la semana pasada."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'move' ('moved'). Participio: 'moved in'.",
+           "example_sentence": "Have they moved in yet?",
+           "example_translation_es": "¿Ya se han mudado?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'move in'.",
+          "example_sentence": "We will move in together.",
+          "example_translation_es": "Nos mudaremos juntos."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'moving in'.",
+          "example_sentence": "He is moving in with his girlfriend.",
+          "example_translation_es": "Él se va a mudar con su novia."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'moved in'.",
+          "example_sentence": "My brother has moved in temporarily.",
+          "example_translation_es": "Mi hermano se ha mudado temporalmente."
+        }
+      },
+      "tips": ["Verbo base 'move' es regular.", "Inseparable.", "Opuesto a 'move out'."]
+    },
+    "pass_out": {
+      "base_verb": "pass",
+      "particle": "out",
+      "phrasal_verb": "pass out",
+      "present_third": "passes out",
+      "past": "passed out",
+      "past_participle": "passed out",
+      "gerund": "passing out",
+      "spanish": "desmayarse, repartir",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable (repartir), inseparable (desmayarse)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'pass' (regular). He/She/It: 'passes out'.",
+          "example_sentence": "He passes out flyers. / She passes out easily.",
+          "example_translation_es": "Él reparte volantes. / Ella se desmaya fácilmente."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'pass' ('passed'). Pasado: 'passed out'.",
+          "example_sentence": "He passed out from the heat. / She passed out the documents.",
+          "example_translation_es": "Se desmayó por el calor. / Ella repartió los documentos."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'pass' ('passed'). Participio: 'passed out'.",
+           "example_sentence": "Has anyone ever passed out here? / Have the sweets been passed out?",
+           "example_translation_es": "¿Alguna vez se ha desmayado alguien aquí? / ¿Se han repartido los dulces?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'pass out'.",
+          "example_sentence": "I feel like I'm going to pass out.",
+          "example_translation_es": "Siento que me voy a desmayar."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'passing out'.",
+          "example_sentence": "They are passing out leaflets.",
+          "example_translation_es": "Están repartiendo folletos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'passed out'.",
+          "example_sentence": "Several people have passed out.",
+          "example_translation_es": "Varias personas se han desmayado."
+        }
+      },
+      "tips": ["Verbo base 'pass' es regular.", "Múltiples significados.", "Separable solo para 'repartir'.", "Similar a 'hand out'."]
+    },
+     "run_away": {
+      "base_verb": "run",
+      "particle": "away",
+      "phrasal_verb": "run away",
+      "present_third": "runs away",
+      "past": "ran away",
+      "past_participle": "run away",
+      "gerund": "running away",
+      "spanish": "escaparse, huir",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "movement",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'run'. He/She/It: 'runs away'.",
+          "example_sentence": "He runs away from his problems.",
+          "example_translation_es": "Él huye de sus problemas."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'run' ('ran'). Pasado: 'ran away'.",
+          "example_sentence": "The child ran away from home.",
+          "example_translation_es": "El niño se escapó de casa."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'run' ('run'). Participio: 'run away'.",
+           "example_sentence": "The suspect has run away.",
+           "example_translation_es": "El sospechoso ha huido."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'run away'.",
+          "example_sentence": "Don't run away!",
+          "example_translation_es": "¡No te escapes!"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'running away' (doble 'n').",
+          "example_sentence": "Why are you running away?",
+          "example_translation_es": "¿Por qué estás huyendo?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'run away'.",
+          "example_sentence": "My dog has run away.",
+          "example_translation_es": "Mi perro se ha escapado."
+        }
+      },
+      "tips": ["Recuerda run/ran/run.", "Inseparable.", "Gerundio 'running' con doble 'n'."]
+    },
+     "sell_out": {
+      "base_verb": "sell",
+      "particle": "out",
+      "phrasal_verb": "sell out",
+      "present_third": "sells out",
+      "past": "sold out",
+      "past_participle": "sold out",
+      "gerund": "selling out",
+      "spanish": "agotarse (entradas, producto), vender(se) completamente",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (agotarse), separable (vender todo)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'sell'. He/She/It: 'sells out'.",
+          "example_sentence": "Tickets sell out quickly.",
+          "example_translation_es": "Las entradas se agotan rápidamente."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'sell' ('sold'). Pasado: 'sold out'.",
+          "example_sentence": "The concert sold out in minutes. / The shop sold out of bread.",
+          "example_translation_es": "Las entradas para el concierto se agotaron en minutos. / La tienda se quedó sin pan (vendió todo)."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'sell' ('sold'). Participio: 'sold out'.",
+           "example_sentence": "Everything has been sold out.",
+           "example_translation_es": "Todo se ha agotado."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'sell out'.",
+          "example_sentence": "It will sell out soon.",
+          "example_translation_es": "Se agotará pronto."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'selling out'.",
+          "example_sentence": "The tickets are selling out fast!",
+          "example_translation_es": "¡Las entradas se están agotando rápido!"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'sold out'.",
+          "example_sentence": "He feels the band has sold out (comprometido artísticamente).",
+          "example_translation_es": "Siente que la banda se ha vendido (comprometido artísticamente)."
+        }
+      },
+      "tips": ["Recuerda sell/sold/sold.", "Inseparable cuando significa agotarse.", "También puede significar 'venderse' en sentido negativo (traicionar principios)."]
+    },
+    "show_off": {
+      "base_verb": "show",
+      "particle": "off",
+      "phrasal_verb": "show off",
+      "present_third": "shows off",
+      "past": "showed off",
+      "past_participle": "shown off / showed off",
+      "gerund": "showing off",
+      "spanish": "presumir, alardear, lucirse",
+      "level": "hard_39",
+      "difficulty": "phrasal",
+      "category": "communication",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'show'. He/She/It: 'shows off'.",
+          "example_sentence": "He likes to show off his new car.",
+          "example_translation_es": "Le gusta presumir de su coche nuevo."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'show' ('showed'). Pasado: 'showed off'.",
+          "example_sentence": "She showed off her skills. / She showed her new dress off.",
+          "example_translation_es": "Ella presumió de sus habilidades. / Lució su nuevo vestido."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'show' ('shown/showed'). Participio: 'shown/showed off'.",
+           "example_sentence": "He has always shown off.",
+           "example_translation_es": "Él siempre ha sido un presumido."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'show off'.",
+          "example_sentence": "Stop showing off!",
+          "example_translation_es": "¡Deja de presumir!"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'showing off'.",
+          "example_sentence": "Why is he showing off so much?",
+          "example_translation_es": "¿Por qué presume tanto?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'shown/showed off'.",
+          "example_sentence": "She has showed off her talents.",
+          "example_translation_es": "Ha lucido sus talentos."
+        }
+      },
+      "tips": ["Recuerda show/showed/shown(showed).", "Separable.", "Tiene connotación negativa."]
+    },
+    "break_in": {
+      "base_verb": "break",
+      "particle": "in / into",
+      "phrasal_verb": "break in / break into",
+      "present_third": "breaks in / breaks into",
+      "past": "broke in / broke into",
+      "past_participle": "broken in / broken into",
+      "gerund": "breaking in / breaking into",
+      "spanish": "interrumpir, entrar a robar, domar (caballo), estrenar (zapatos)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (interrumpir, robar), separable (domar, estrenar)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'break'. He/She/It: 'breaks in'.",
+          "example_sentence": "Don't break in while I'm talking.",
+          "example_translation_es": "No interrumpas mientras estoy hablando."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'break' ('broke'). Pasado: 'broke in'.",
+          "example_sentence": "Someone broke into our house. / He needs to break in his new shoes.",
+          "example_translation_es": "Alguien entró a robar en nuestra casa. / Necesita estrenar (adaptar) sus zapatos nuevos."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'break' ('broken'). Participio: 'broken in'.",
+           "example_sentence": "The horse has been broken in. / Have the shoes been broken in?",
+           "example_translation_es": "El caballo ha sido domado. / ¿Se han estrenado ya los zapatos?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'break in'.",
+          "example_sentence": "How will we break into the market?",
+          "example_translation_es": "¿Cómo entraremos en el mercado?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'breaking in'.",
+          "example_sentence": "Stop breaking in!",
+          "example_translation_es": "¡Deja de interrumpir!"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'broken in'.",
+          "example_sentence": "Thieves have broken into the museum.",
+          "example_translation_es": "Ladrones han entrado a robar en el museo."
+        }
+      },
+      "tips": ["Recuerda break/broke/broken.", "Múltiples significados.", "Separable solo para 'domar' o 'estrenar'."]
+    },
+     "bring_down": {
+      "base_verb": "bring",
+      "particle": "down",
+      "phrasal_verb": "bring down",
+      "present_third": "brings down",
+      "past": "brought down",
+      "past_participle": "brought down",
+      "gerund": "bringing down",
+      "spanish": "bajar (algo), derribar, reducir (precio), deprimir",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'bring'. He/She/It: 'brings down'.",
+          "example_sentence": "This music brings me down.",
+          "example_translation_es": "Esta música me deprime."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'bring' ('brought'). Pasado: 'brought down'.",
+          "example_sentence": "They brought down the old building. / The bad news brought her down.",
+          "example_translation_es": "Derribaron el viejo edificio. / Las malas noticias la deprimieron."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'bring' ('brought'). Participio: 'brought down'.",
+           "example_sentence": "The prices have been brought down. / Has he brought the boxes down?",
+           "example_translation_es": "Los precios han sido reducidos. / ¿Ha bajado él las cajas?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'bring down'.",
+          "example_sentence": "We need to bring down costs.",
+          "example_translation_es": "Necesitamos reducir los costos."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'bringing down'.",
+          "example_sentence": "The government is bringing down taxes.",
+          "example_translation_es": "El gobierno está bajando los impuestos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'brought down'.",
+          "example_sentence": "This scandal has brought down the minister.",
+          "example_translation_es": "Este escándalo ha hecho caer al ministro."
+        }
+      },
+      "tips": ["Recuerda bring/brought/brought.", "Múltiples significados.", "Separable."]
+    },
+     "carry_out": {
+      "base_verb": "carry",
+      "particle": "out",
+      "phrasal_verb": "carry out",
+      "present_third": "carries out",
+      "past": "carried out",
+      "past_participle": "carried out",
+      "gerund": "carrying out",
+      "spanish": "llevar a cabo, realizar (tarea, plan)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'carry'. He/She/It: 'carries out'.",
+          "example_sentence": "The team carries out experiments.",
+          "example_translation_es": "El equipo realiza experimentos."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'carry' ('carried'). Pasado: 'carried out'.",
+          "example_sentence": "She carried out her duties efficiently. / She carried the plan out.",
+          "example_translation_es": "Ella realizó sus tareas eficientemente."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'carry' ('carried'). Participio: 'carried out'.",
+           "example_sentence": "The instructions must be carried out precisely.",
+           "example_translation_es": "Las instrucciones deben realizarse con precisión."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'carry out'.",
+          "example_sentence": "We will carry out the necessary tests.",
+          "example_translation_es": "Realizaremos las pruebas necesarias."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'carrying out'.",
+          "example_sentence": "They are carrying out repairs.",
+          "example_translation_es": "Están realizando reparaciones."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'carried out'.",
+          "example_sentence": "Have you carried out the orders?",
+          "example_translation_es": "¿Has ejecutado las órdenes?"
+        }
+      },
+      "tips": ["Recuerda carry/carried/carried.", "Separable.", "Común en contextos formales y laborales."]
+    },
+     "cut_in": {
+      "base_verb": "cut",
+      "particle": "in",
+      "phrasal_verb": "cut in",
+      "present_third": "cuts in",
+      "past": "cut in",
+      "past_participle": "cut in",
+      "gerund": "cutting in",
+      "spanish": "interrumpir, meterse (en fila, tráfico)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "communication",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'cut'. He/She/It: 'cuts in'.",
+          "example_sentence": "Don't cut in when others are talking.",
+          "example_translation_es": "No interrumpas cuando otros están hablando."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'cut' ('cut'). Pasado: 'cut in'.",
+          "example_sentence": "He cut in line in front of me. / She cut in with a comment.",
+          "example_translation_es": "Se coló en la fila delante de mí. / Interrumpió con un comentario."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'cut' ('cut'). Participio: 'cut in'.",
+           "example_sentence": "Someone has cut in again.",
+           "example_translation_es": "Alguien se ha vuelto a colar."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'cut in'.",
+          "example_sentence": "Please don't cut in.",
+          "example_translation_es": "Por favor, no interrumpas."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'cutting in' (doble 't').",
+          "example_sentence": "That car is cutting in!",
+          "example_translation_es": "¡Ese coche se está metiendo!"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'cut in'.",
+          "example_sentence": "He has cut in several times.",
+          "example_translation_es": "Ha interrumpido varias veces."
+        }
+      },
+      "tips": ["Recuerda cut/cut/cut.", "Inseparable.", "Gerundio 'cutting' con doble 't'."]
+    },
+    "cut_down": {
+      "base_verb": "cut",
+      "particle": "down",
+      "phrasal_verb": "cut down",
+      "present_third": "cuts down",
+      "past": "cut down",
+      "past_participle": "cut down",
+      "gerund": "cutting down",
+      "spanish": "talar (árbol), reducir (cantidad)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'cut'. He/She/It: 'cuts down'.",
+          "example_sentence": "He needs to cut down expenses.",
+          "example_translation_es": "Necesita reducir gastos."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'cut' ('cut'). Pasado: 'cut down'.",
+          "example_sentence": "They cut down the old tree. / She cut down on sugar.",
+          "example_translation_es": "Talaron el viejo árbol. / Redujo el consumo de azúcar."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'cut' ('cut'). Participio: 'cut down'.",
+           "example_sentence": "Have you cut down the branches? / Smoking must be cut down.",
+           "example_translation_es": "¿Has cortado las ramas? / Se debe reducir el fumar."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'cut down'.",
+          "example_sentence": "We will cut down our energy use.",
+          "example_translation_es": "Reduciremos nuestro consumo de energía."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'cutting down' (doble 't').",
+          "example_sentence": "He is cutting down the tree.",
+          "example_translation_es": "Está talando el árbol."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'cut down'.",
+          "example_sentence": "I have cut down on coffee.",
+          "example_translation_es": "He reducido el café."
+        }
+      },
+      "tips": ["Recuerda cut/cut/cut.", "Separable.", "Gerundio 'cutting' con doble 't'.", "A menudo seguido de 'on + algo' para reducir consumo."]
+    },
+    "get_back": {
+      "base_verb": "get",
+      "particle": "back",
+      "phrasal_verb": "get back",
+      "present_third": "gets back",
+      "past": "got back",
+      "past_participle": "got back / gotten back",
+      "gerund": "getting back",
+      "spanish": "regresar, volver, recuperar (algo)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "movement",
+      "separability": "separable (recuperar), inseparable (regresar)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'get'. He/She/It: 'gets back'.",
+          "example_sentence": "What time do you get back from work?",
+          "example_translation_es": "¿A qué hora vuelves del trabajo?"
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'get' ('got'). Pasado: 'got back'.",
+          "example_sentence": "She got back late last night. / He got his book back.",
+          "example_translation_es": "Volvió tarde anoche. / Recuperó su libro."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'get' ('got/gotten'). Participio: 'got/gotten back'.",
+           "example_sentence": "Have you gotten back your keys? / Has he gotten back yet?",
+           "example_translation_es": "¿Has recuperado tus llaves? / ¿Ha vuelto ya?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'get back'.",
+          "example_sentence": "I will get back to you soon (responderé).",
+          "example_translation_es": "Te responderé pronto."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'getting back'.",
+          "example_sentence": "We are getting back together (reconciliándose).",
+          "example_translation_es": "Estamos volviendo juntos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'got/gotten back'.",
+          "example_sentence": "She has just gotten back from Spain.",
+          "example_translation_es": "Acaba de volver de España."
+        }
+      },
+      "tips": ["Recuerda get/got/got(ten).", "Múltiples significados.", "Separable solo para 'recuperar'."]
+    },
+     "go_out": {
+      "base_verb": "go",
+      "particle": "out",
+      "phrasal_verb": "go out",
+      "present_third": "goes out",
+      "past": "went out",
+      "past_participle": "gone out",
+      "gerund": "going out",
+      "spanish": "salir (a divertirse, con alguien), apagarse (luz, fuego), pasar de moda",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'go'. He/She/It: 'goes out'.",
+          "example_sentence": "She goes out with her friends every weekend.",
+          "example_translation_es": "Ella sale con sus amigos cada fin de semana."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'go' ('went'). Pasado: 'went out'.",
+          "example_sentence": "The lights went out. / They went out together for a year.",
+          "example_translation_es": "Se apagaron las luces. / Salieron juntos durante un año."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'go' ('gone'). Participio: 'gone out'.",
+           "example_sentence": "Has the fire gone out? / Mini skirts have gone out.",
+           "example_translation_es": "¿Se ha apagado el fuego? / Las minifaldas han pasado de moda."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'go out'.",
+          "example_sentence": "Are you going out tonight?",
+          "example_translation_es": "¿Vas a salir esta noche?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'going out'.",
+          "example_sentence": "He is going out with Sarah.",
+          "example_translation_es": "Él está saliendo con Sarah."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'gone out'.",
+          "example_sentence": "Everyone has gone out.",
+          "example_translation_es": "Todo el mundo ha salido."
+        }
+      },
+      "tips": ["Recuerda go/went/gone.", "Inseparable.", "Muy polisémico."]
+    },
+    "look_out": {
+      "base_verb": "look",
+      "particle": "out",
+      "phrasal_verb": "look out",
+      "present_third": "looks out",
+      "past": "looked out",
+      "past_participle": "looked out",
+      "gerund": "looking out",
+      "spanish": "tener cuidado, estar atento, mirar hacia fuera",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'look'. He/She/It: 'looks out'.",
+          "example_sentence": "Look out! There's a car coming.",
+          "example_translation_es": "¡Cuidado! Viene un coche."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'look' ('looked'). Pasado: 'looked out'.",
+          "example_sentence": "She looked out of the window.",
+          "example_translation_es": "Ella miró por la ventana."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'look' ('looked'). Participio: 'looked out'.",
+           "example_sentence": "You should have looked out.",
+           "example_translation_es": "Deberías haber tenido cuidado."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'look out'.",
+          "example_sentence": "Will you look out for my bag?",
+          "example_translation_es": "¿Vigilarás mi bolso?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'looking out'.",
+          "example_sentence": "He is looking out for opportunities.",
+          "example_translation_es": "Él está atento a las oportunidades."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'looked out'.",
+          "example_sentence": "We have looked out for each other.",
+          "example_translation_es": "Nos hemos cuidado el uno al otro."
+        }
+      },
+      "tips": ["Verbo base 'look' es regular.", "Inseparable.", "'Look out for' = estar atento a / cuidar de."]
+    },
+    "put_down": {
+      "base_verb": "put",
+      "particle": "down",
+      "phrasal_verb": "put down",
+      "present_third": "puts down",
+      "past": "put down",
+      "past_participle": "put down",
+      "gerund": "putting down",
+      "spanish": "bajar, dejar (algo), menospreciar, criticar, sacrificar (animal)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'put'. He/She/It: 'puts down'.",
+          "example_sentence": "Put down your weapon!",
+          "example_translation_es": "¡Baja tu arma!"
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'put' ('put'). Pasado: 'put down'.",
+          "example_sentence": "She put down the heavy box. / He put me down in front of everyone.",
+          "example_translation_es": "Ella dejó la caja pesada. / Me menospreció delante de todos."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'put' ('put'). Participio: 'put down'.",
+           "example_sentence": "Have you put the baby down? / The rebellion was put down.",
+           "example_translation_es": "¿Has acostado al bebé? / La rebelión fue sofocada."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'put down'.",
+          "example_sentence": "I need to put my thoughts down on paper.",
+          "example_translation_es": "Necesito poner mis pensamientos por escrito."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'putting down' (doble 't').",
+          "example_sentence": "Stop putting yourself down!",
+          "example_translation_es": "¡Deja de menospreciarte!"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'put down'.",
+          "example_sentence": "We have put down a deposit.",
+          "example_translation_es": "Hemos pagado una señal (depósito)."
+        }
+      },
+      "tips": ["Recuerda put/put/put.", "Muy polisémico.", "Separable.", "Gerundio 'putting' con doble 't'."]
+    },
+    "take_in": {
+      "base_verb": "take",
+      "particle": "in",
+      "phrasal_verb": "take in",
+      "present_third": "takes in",
+      "past": "took in",
+      "past_participle": "taken in",
+      "gerund": "taking in",
+      "spanish": "asimilar (información), entender, engañar, acoger (a alguien), meter (ropa)",
+      "level": "hard_40",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'take'. He/She/It: 'takes in'.",
+          "example_sentence": "It's hard to take in so much information.",
+          "example_translation_es": "Es difícil asimilar tanta información."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'take' ('took'). Pasado: 'took in'.",
+          "example_sentence": "She took in the stray cat. / He took me in with his lies.",
+          "example_translation_es": "Ella acogió al gato callejero. / Me engañó con sus mentiras."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'take' ('taken'). Participio: 'taken in'.",
+           "example_sentence": "Have you taken in the view? / She was completely taken in.",
+           "example_translation_es": "¿Has asimilado (disfrutado) la vista? / Fue completamente engañada."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'take in'.",
+          "example_sentence": "The dress needs to be taken in.",
+          "example_translation_es": "Hay que meter (estrechar) el vestido."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'taking in'.",
+          "example_sentence": "He is taking in the atmosphere.",
+          "example_translation_es": "Está absorbiendo la atmósfera."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'taken in'.",
+          "example_sentence": "We have taken in several refugees.",
+          "example_translation_es": "Hemos acogido a varios refugiados."
+        }
+      },
+      "tips": ["Recuerda take/took/taken.", "Muy polisémico.", "Separable."]
+    },
+    "clear_up": {
+      "base_verb": "clear",
+      "particle": "up",
+      "phrasal_verb": "clear up",
+      "present_third": "clears up",
+      "past": "cleared up",
+      "past_participle": "cleared up",
+      "gerund": "clearing up",
+      "spanish": "aclarar(se) (duda, cielo), ordenar, limpiar",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable (ordenar, aclarar), inseparable (cielo)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'clear' (regular). He/She/It: 'clears up'.",
+          "example_sentence": "The sky usually clears up in the afternoon.",
+          "example_translation_es": "El cielo suele despejarse por la tarde."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'clear' ('cleared'). Pasado: 'cleared up'.",
+          "example_sentence": "He cleared up the misunderstanding. / She cleared up her room.",
+          "example_translation_es": "Él aclaró el malentendido. / Ella ordenó su habitación."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'clear' ('cleared'). Participio: 'cleared up'.",
+           "example_sentence": "Has the rash cleared up? / Have you cleared up the kitchen?",
+           "example_translation_es": "¿Ha desaparecido la erupción? / ¿Has ordenado la cocina?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'clear up'.",
+          "example_sentence": "Let me clear this up for you.",
+          "example_translation_es": "Déjame aclararte esto."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'clearing up'.",
+          "example_sentence": "The weather is clearing up.",
+          "example_translation_es": "El tiempo está mejorando (despejándose)."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'cleared up'.",
+          "example_sentence": "I have cleared up most of the mess.",
+          "example_translation_es": "He limpiado/ordenado la mayor parte del desastre."
+        }
+      },
+      "tips": ["Verbo base 'clear' es regular.", "Separable para 'ordenar' o 'aclarar duda'."]
+    },
+    "cut_off": {
+      "base_verb": "cut",
+      "particle": "off",
+      "phrasal_verb": "cut off",
+      "present_third": "cuts off",
+      "past": "cut off",
+      "past_participle": "cut off",
+      "gerund": "cutting off",
+      "spanish": "cortar (suministro), interrumpir (conversación), aislar",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'cut'. He/She/It: 'cuts off'.",
+          "example_sentence": "He always cuts me off when I speak.",
+          "example_translation_es": "Él siempre me interrumpe cuando hablo."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'cut' ('cut'). Pasado: 'cut off'.",
+          "example_sentence": "They cut off the electricity. / The town was cut off by the snow.",
+          "example_translation_es": "Cortaron la electricidad. / El pueblo quedó aislado por la nieve."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'cut' ('cut'). Participio: 'cut off'.",
+           "example_sentence": "Have you cut off the label? / We have been cut off (phone).",
+           "example_translation_es": "¿Has cortado la etiqueta? / Nos han cortado (teléfono)."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'cut off'.",
+          "example_sentence": "I will cut you off if you don't pay.",
+          "example_translation_es": "Te cortaré (el suministro) si no pagas."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'cutting off' (doble 't').",
+          "example_sentence": "Why are you cutting me off?",
+          "example_translation_es": "¿Por qué me interrumpes?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'cut off'.",
+          "example_sentence": "She has cut off all contact.",
+          "example_translation_es": "Ha cortado todo contacto."
+        }
+      },
+      "tips": ["Recuerda cut/cut/cut.", "Separable.", "Gerundio 'cutting' con doble 't'."]
+    },
+     "give_in": {
+      "base_verb": "give",
+      "particle": "in",
+      "phrasal_verb": "give in",
+      "present_third": "gives in",
+      "past": "gave in",
+      "past_participle": "given in",
+      "gerund": "giving in",
+      "spanish": "ceder, rendirse (a presión), entregar (trabajo)",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable (entregar), inseparable (ceder)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'give'. He/She/It: 'gives in'.",
+          "example_sentence": "He never gives in to pressure.",
+          "example_translation_es": "Él nunca cede a la presión."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'give' ('gave'). Pasado: 'gave in'.",
+          "example_sentence": "She finally gave in and agreed. / He gave in his homework.",
+          "example_translation_es": "Ella finalmente cedió y aceptó. / Entregó sus deberes."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'give' ('given'). Participio: 'given in'.",
+           "example_sentence": "Have you given in your notice? / They haven't given in yet.",
+           "example_translation_es": "¿Has entregado tu preaviso (de dimisión)? / No han cedido todavía."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'give in'.",
+          "example_sentence": "Don't give in!",
+          "example_translation_es": "¡No te rindas!"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'giving in'.",
+          "example_sentence": "Are you giving in to temptation?",
+          "example_translation_es": "¿Estás cediendo a la tentación?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'given in'.",
+          "example_sentence": "The rebels have given in.",
+          "example_translation_es": "Los rebeldes se han rendido."
+        }
+      },
+      "tips": ["Recuerda give/gave/given.", "Similar a 'hand in' para entregar.", "Similar a 'give up' para rendirse."]
+    },
+    "go_off": {
+      "base_verb": "go",
+      "particle": "off",
+      "phrasal_verb": "go off",
+      "present_third": "goes off",
+      "past": "went off",
+      "past_participle": "gone off",
+      "gerund": "going off",
+      "spanish": "explotar (bomba), sonar (alarma), irse, estropearse (comida)",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "events",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'go'. He/She/It: 'goes off'.",
+          "example_sentence": "My alarm goes off at 7.",
+          "example_translation_es": "Mi alarma suena a las 7."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'go' ('went'). Pasado: 'went off'.",
+          "example_sentence": "The bomb went off. / The milk went off.",
+          "example_translation_es": "La bomba explotó. / La leche se estropeó."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'go' ('gone'). Participio: 'gone off'.",
+           "example_sentence": "Has the heating gone off? / He has gone off coffee (dejado de gustarle).",
+           "example_translation_es": "¿Se ha apagado la calefacción? / Le ha dejado de gustar el café."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'go off'.",
+          "example_sentence": "The fireworks will go off at midnight.",
+          "example_translation_es": "Los fuegos artificiales explotarán a medianoche."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'going off'.",
+          "example_sentence": "The alarm is going off!",
+          "example_translation_es": "¡La alarma está sonando!"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'gone off'.",
+          "example_sentence": "I think this cheese has gone off.",
+          "example_translation_es": "Creo que este queso se ha estropeado."
+        }
+      },
+      "tips": ["Recuerda go/went/gone.", "Inseparable.", "Muy polisémico."]
+    },
+     "hold_up": {
+      "base_verb": "hold",
+      "particle": "up",
+      "phrasal_verb": "hold up",
+      "present_third": "holds up",
+      "past": "held up",
+      "past_participle": "held up",
+      "gerund": "holding up",
+      "spanish": "retrasar, atracar (robo), sostener",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'hold'. He/She/It: 'holds up'.",
+          "example_sentence": "Traffic holds me up every morning.",
+          "example_translation_es": "El tráfico me retrasa cada mañana."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'hold' ('held'). Pasado: 'held up'.",
+          "example_sentence": "The bank was held up yesterday. / Hold up your hand.",
+          "example_translation_es": "Atracaron el banco ayer. / Levanta la mano."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'hold' ('held'). Participio: 'held up'.",
+           "example_sentence": "We have been held up by the storm. / Has the bridge held up?",
+           "example_translation_es": "Hemos sido retrasados por la tormenta. / ¿Ha resistido el puente?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'hold up'.",
+          "example_sentence": "Hold up a minute, I forgot something.",
+          "example_translation_es": "Espera un minuto, olvidé algo."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'holding up'.",
+          "example_sentence": "What's holding up the project?",
+          "example_translation_es": "¿Qué está retrasando el proyecto?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'held up'.",
+          "example_sentence": "She has held up well under pressure.",
+          "example_translation_es": "Ha aguantado bien bajo presión."
+        }
+      },
+      "tips": ["Recuerda hold/held/held.", "Separable."]
+    },
+     "let_off": {
+      "base_verb": "let",
+      "particle": "off",
+      "phrasal_verb": "let off",
+      "present_third": "lets off",
+      "past": "let off",
+      "past_participle": "let off",
+      "gerund": "letting off",
+      "spanish": "perdonar (sin castigo), dejar salir (bus), hacer explotar (fuegos artificiales)",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'let'. He/She/It: 'lets off'.",
+          "example_sentence": "The judge lets him off with a warning.",
+          "example_translation_es": "El juez lo perdona con una advertencia."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'let' ('let'). Pasado: 'let off'.",
+          "example_sentence": "They let off fireworks. / The driver let me off at the corner.",
+          "example_translation_es": "Lanzaron fuegos artificiales. / El conductor me dejó bajar en la esquina."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'let' ('let'). Participio: 'let off'.",
+           "example_sentence": "He was let off lightly. / Have the passengers been let off?",
+           "example_translation_es": "Se libró con poco castigo. / ¿Se ha dejado bajar a los pasajeros?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'let off'.",
+          "example_sentence": "I will let you off this time.",
+          "example_translation_es": "Te perdonaré esta vez."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'letting off' (doble 't').",
+          "example_sentence": "He is letting off steam (desahogándose).",
+          "example_translation_es": "Se está desahogando."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'let off'.",
+          "example_sentence": "They have let off all the fireworks.",
+          "example_translation_es": "Han lanzado todos los fuegos artificiales."
+        }
+      },
+      "tips": ["Recuerda let/let/let.", "Separable.", "Gerundio 'letting' con doble 't'."]
+    },
+    "make_out": {
+      "base_verb": "make",
+      "particle": "out",
+      "phrasal_verb": "make out",
+      "present_third": "makes out",
+      "past": "made out",
+      "past_participle": "made out",
+      "gerund": "making out",
+      "spanish": "discernir, distinguir, fingir, besarse apasionadamente",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable (discernir, fingir), inseparable (besarse)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'make'. He/She/It: 'makes out'.",
+          "example_sentence": "Can you make out the sign from here?",
+          "example_translation_es": "¿Puedes distinguir la señal desde aquí?"
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'make' ('made'). Pasado: 'made out'.",
+          "example_sentence": "I couldn't make out what he was saying. / They were making out in the car.",
+          "example_translation_es": "No pude discernir lo que decía. / Se estaban besando apasionadamente en el coche."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'make' ('made'). Participio: 'made out'.",
+           "example_sentence": "He made out that he was ill. / How have you made out? (progresado)",
+           "example_translation_es": "Fingió que estaba enfermo. / ¿Cómo te ha ido? (cómo has progresado)"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'make out'.",
+          "example_sentence": "How will you make out the details?",
+          "example_translation_es": "¿Cómo distinguirás los detalles?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'making out'.",
+          "example_sentence": "I'm trying to make out the figure.",
+          "example_translation_es": "Estoy intentando distinguir la figura."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'made out'.",
+          "example_sentence": "She has made out the check to me.",
+          "example_translation_es": "Ella ha extendido el cheque a mi nombre."
+        }
+      },
+      "tips": ["Recuerda make/made/made.", "Muy polisémico e informal.", "Separable excepto para 'besarse'."]
+    },
+    "run_down": {
+      "base_verb": "run",
+      "particle": "down",
+      "phrasal_verb": "run down",
+      "present_third": "runs down",
+      "past": "ran down",
+      "past_participle": "run down",
+      "gerund": "running down",
+      "spanish": "criticar, menospreciar, atropellar, agotarse (batería), deteriorarse",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable (criticar, atropellar), inseparable (agotarse, deteriorarse)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'run'. He/She/It: 'runs down'.",
+          "example_sentence": "He always runs down his colleagues.",
+          "example_translation_es": "Él siempre critica a sus colegas."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'run' ('ran'). Pasado: 'ran down'.",
+          "example_sentence": "The car ran down the pedestrian. / The battery ran down.",
+          "example_translation_es": "El coche atropelló al peatón. / La batería se agotó."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'run' ('run'). Participio: 'run down'.",
+           "example_sentence": "He felt very run down (agotado físicamente). / Have you run down the list?",
+           "example_translation_es": "Se sentía muy agotado. / ¿Has revisado (rápidamente) la lista?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'run down'.",
+          "example_sentence": "The clock will run down soon.",
+          "example_translation_es": "El reloj se parará (agotará la cuerda) pronto."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'running down'.",
+          "example_sentence": "My phone is running down.",
+          "example_translation_es": "Mi teléfono se está quedando sin batería."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'run down'.",
+          "example_sentence": "The old building has run down over the years.",
+          "example_translation_es": "El viejo edificio se ha deteriorado con los años."
+        }
+      },
+      "tips": ["Recuerda run/ran/run.", "Muy polisémico.", "Separable para 'criticar' y 'atropellar'."]
+    },
+     "set_in": {
+      "base_verb": "set",
+      "particle": "in",
+      "phrasal_verb": "set in",
+      "present_third": "sets in",
+      "past": "set in",
+      "past_participle": "set in",
+      "gerund": "setting in",
+      "spanish": "empezar y continuar (generalmente algo desagradable: mal tiempo, enfermedad, podredumbre)",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "events",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'set'. He/She/It: 'sets in'.",
+          "example_sentence": "Winter sets in early here.",
+          "example_translation_es": "El invierno empieza temprano aquí."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'set' ('set'). Pasado: 'set in'.",
+          "example_sentence": "The rain set in for the day.",
+          "example_translation_es": "La lluvia empezó (y continuó) durante el día."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'set' ('set'). Participio: 'set in'.",
+           "example_sentence": "Panic has set in.",
+           "example_translation_es": "El pánico ha cundido (empezado y continúa)."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'set in'.",
+          "example_sentence": "The cold weather will set in soon.",
+          "example_translation_es": "El tiempo frío empezará pronto."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'setting in' (doble 't').",
+          "example_sentence": "Doubt is setting in.",
+          "example_translation_es": "La duda está empezando a aparecer."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'set in'.",
+          "example_sentence": "Rot has set in.",
+          "example_translation_es": "La podredumbre ha empezado."
+        }
+      },
+      "tips": ["Recuerda set/set/set.", "Inseparable.", "Gerundio 'setting' con doble 't'."]
+    },
+    "take_up": {
+      "base_verb": "take",
+      "particle": "up",
+      "phrasal_verb": "take up",
+      "present_third": "takes up",
+      "past": "took up",
+      "past_participle": "taken up",
+      "gerund": "taking up",
+      "spanish": "empezar (hobby, actividad), ocupar (espacio, tiempo), aceptar (oferta)",
+      "level": "hard_41",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'take'. He/She/It: 'takes up'.",
+          "example_sentence": "This sofa takes up too much space.",
+          "example_translation_es": "Este sofá ocupa demasiado espacio."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'take' ('took'). Pasado: 'took up'.",
+          "example_sentence": "She took up photography. / He took up the challenge.",
+          "example_translation_es": "Ella empezó a hacer fotografía. / Aceptó el desafío."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'take' ('taken'). Participio: 'taken up'.",
+           "example_sentence": "Have you taken up their offer? / My time is taken up with meetings.",
+           "example_translation_es": "¿Has aceptado su oferta? / Mi tiempo está ocupado con reuniones."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'take up'.",
+          "example_sentence": "I will take up swimming.",
+          "example_translation_es": "Empezaré a nadar."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'taking up'.",
+          "example_sentence": "This project is taking up all my time.",
+          "example_translation_es": "Este proyecto está ocupando todo mi tiempo."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'taken up'.",
+          "example_sentence": "She has taken up yoga recently.",
+          "example_translation_es": "Ha empezado a hacer yoga recientemente."
+        }
+      },
+      "tips": ["Recuerda take/took/taken.", "Separable."]
+    },
+     "check_up_on": {
+      "base_verb": "check",
+      "particle": "up on",
+      "phrasal_verb": "check up on",
+      "present_third": "checks up on",
+      "past": "checked up on",
+      "past_participle": "checked up on",
+      "gerund": "checking up on",
+      "spanish": "vigilar, controlar, comprobar (el estado de alguien/algo)",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'check'. He/She/It: 'checks up on'.",
+          "example_sentence": "She checks up on her kids regularly.",
+          "example_translation_es": "Ella controla a sus hijos regularmente."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'check' ('checked'). Pasado: 'checked up on'.",
+          "example_sentence": "He checked up on the facts.",
+          "example_translation_es": "Él comprobó los hechos."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'check' ('checked'). Participio: 'checked up on'.",
+           "example_sentence": "Have you checked up on the progress?",
+           "example_translation_es": "¿Has comprobado el progreso?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'check up on'.",
+          "example_sentence": "I will check up on him later.",
+          "example_translation_es": "Veré cómo está él más tarde."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'checking up on'.",
+          "example_sentence": "Why are you checking up on me?",
+          "example_translation_es": "¿Por qué me estás controlando?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'checked up on'.",
+          "example_sentence": "The doctor has checked up on the patient.",
+          "example_translation_es": "El médico ha comprobado (el estado de) el paciente."
+        }
+      },
+      "tips": ["Verbo base 'check' es regular.", "Verbo de tres partes, inseparable."]
+    },
+    "come_up_against": {
+      "base_verb": "come",
+      "particle": "up against",
+      "phrasal_verb": "come up against",
+      "present_third": "comes up against",
+      "past": "came up against",
+      "past_participle": "come up against",
+      "gerund": "coming up against",
+      "spanish": "enfrentarse a, toparse con (dificultad, oposición)",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'come'. He/She/It: 'comes up against'.",
+          "example_sentence": "She often comes up against resistance.",
+          "example_translation_es": "Ella a menudo se enfrenta a resistencia."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'come' ('came'). Pasado: 'came up against'.",
+          "example_sentence": "We came up against unexpected problems.",
+          "example_translation_es": "Nos topamos con problemas inesperados."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'come' ('come'). Participio: 'come up against'.",
+           "example_sentence": "Have you ever come up against such opposition?",
+           "example_translation_es": "¿Alguna vez te has enfrentado a tal oposición?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'come up against'.",
+          "example_sentence": "You will come up against challenges.",
+          "example_translation_es": "Te enfrentarás a desafíos."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'coming up against'.",
+          "example_sentence": "He is coming up against strong competition.",
+          "example_translation_es": "Se está enfrentando a una fuerte competencia."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'come up against'.",
+          "example_sentence": "They have come up against a brick wall (obstáculo infranqueable).",
+          "example_translation_es": "Se han topado con un muro."
+        }
+      },
+      "tips": ["Recuerda come/came/come.", "Verbo de tres partes, inseparable."]
+    },
+     "get_down_to": {
+      "base_verb": "get",
+      "particle": "down to",
+      "phrasal_verb": "get down to",
+      "present_third": "gets down to",
+      "past": "got down to",
+      "past_participle": "got down to / gotten down to",
+      "gerund": "getting down to",
+      "spanish": "ponerse a (trabajar en algo serio)",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'get'. He/She/It: 'gets down to'.",
+          "example_sentence": "Let's get down to business.",
+          "example_translation_es": "Pongámonos manos a la obra."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'get' ('got'). Pasado: 'got down to'.",
+          "example_sentence": "She finally got down to studying.",
+          "example_translation_es": "Finalmente se puso a estudiar."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'get' ('got/gotten'). Participio: 'got/gotten down to'.",
+           "example_sentence": "Have you gotten down to writing the report?",
+           "example_translation_es": "¿Te has puesto ya a escribir el informe?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'get down to'.",
+          "example_sentence": "We will get down to planning tomorrow.",
+          "example_translation_es": "Nos pondremos a planificar mañana."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'getting down to'.",
+          "example_sentence": "I'm just getting down to work now.",
+          "example_translation_es": "Justo me estoy poniendo a trabajar ahora."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'got/gotten down to'.",
+          "example_sentence": "He hasn't gotten down to fixing the leak yet.",
+          "example_translation_es": "Todavía no se ha puesto a arreglar la fuga."
+        }
+      },
+      "tips": ["Recuerda get/got/got(ten).", "Verbo de tres partes, inseparable.", "Seguido de sustantivo o gerundio (-ing)."]
+    },
+    "catch_up_on": {
+      "base_verb": "catch",
+      "particle": "up on",
+      "phrasal_verb": "catch up on",
+      "present_third": "catches up on",
+      "past": "caught up on",
+      "past_participle": "caught up on",
+      "gerund": "catching up on",
+      "spanish": "ponerse al día con (noticias, trabajo, sueño)",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'catch'. He/She/It: 'catches up on'.",
+          "example_sentence": "He catches up on the news online.",
+          "example_translation_es": "Él se pone al día con las noticias en línea."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'catch' ('caught'). Pasado: 'caught up on'.",
+          "example_sentence": "I caught up on my sleep this weekend.",
+          "example_translation_es": "Me puse al día con el sueño este fin de semana."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'catch' ('caught'). Participio: 'caught up on'.",
+           "example_sentence": "Have you caught up on all the emails?",
+           "example_translation_es": "¿Te has puesto al día con todos los correos?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'catch up on'.",
+          "example_sentence": "I need to catch up on my reading.",
+          "example_translation_es": "Necesito ponerme al día con mi lectura."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'catching up on'.",
+          "example_sentence": "She is catching up on missed episodes.",
+          "example_translation_es": "Ella se está poniendo al día con los episodios perdidos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'caught up on'.",
+          "example_sentence": "He has finally caught up on his work.",
+          "example_translation_es": "Finalmente se ha puesto al día con su trabajo."
+        }
+      },
+      "tips": ["Recuerda catch/caught/caught.", "Verbo de tres partes, inseparable.", "También 'catch up with' (alcanzar a alguien)."]
+    },
+    "come_down_with": {
+      "base_verb": "come",
+      "particle": "down with",
+      "phrasal_verb": "come down with",
+      "present_third": "comes down with",
+      "past": "came down with",
+      "past_participle": "come down with",
+      "gerund": "coming down with",
+      "spanish": "caer enfermo con, empezar a tener (enfermedad)",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "health",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'come'. He/She/It: 'comes down with'.",
+          "example_sentence": "He often comes down with a cold in winter.",
+          "example_translation_es": "A menudo pilla un resfriado en invierno."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'come' ('came'). Pasado: 'came down with'.",
+          "example_sentence": "She came down with the flu.",
+          "example_translation_es": "Pilló la gripe."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'come' ('come'). Participio: 'come down with'.",
+           "example_sentence": "I think I might have come down with something.",
+           "example_translation_es": "Creo que podría haber pillado algo."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'come down with'.",
+          "example_sentence": "I hope I don't come down with that.",
+          "example_translation_es": "Espero no pillar eso."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'coming down with'.",
+          "example_sentence": "I feel like I'm coming down with a cold.",
+          "example_translation_es": "Siento que estoy empezando a resfriarme."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'come down with'.",
+          "example_sentence": "Half the team has come down with food poisoning.",
+          "example_translation_es": "La mitad del equipo ha caído enfermo con intoxicación alimentaria."
+        }
+      },
+      "tips": ["Recuerda come/came/come.", "Verbo de tres partes, inseparable."]
+    },
+    "cut_down_on": {
+      "base_verb": "cut",
+      "particle": "down on",
+      "phrasal_verb": "cut down on",
+      "present_third": "cuts down on",
+      "past": "cut down on",
+      "past_participle": "cut down on",
+      "gerund": "cutting down on",
+      "spanish": "reducir el consumo de",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'cut'. He/She/It: 'cuts down on'.",
+          "example_sentence": "He needs to cut down on sugar.",
+          "example_translation_es": "Necesita reducir el consumo de azúcar."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'cut' ('cut'). Pasado: 'cut down on'.",
+          "example_sentence": "She cut down on smoking.",
+          "example_translation_es": "Redujo el consumo de tabaco."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'cut' ('cut'). Participio: 'cut down on'.",
+           "example_sentence": "Have you cut down on caffeine?",
+           "example_translation_es": "¿Has reducido el consumo de cafeína?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'cut down on'.",
+          "example_sentence": "I will try to cut down on snacks.",
+          "example_translation_es": "Intentaré reducir el consumo de snacks."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'cutting down on' (doble 't').",
+          "example_sentence": "We are cutting down on expenses.",
+          "example_translation_es": "Estamos reduciendo gastos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'cut down on'.",
+          "example_sentence": "He has cut down on red meat.",
+          "example_translation_es": "Ha reducido el consumo de carne roja."
+        }
+      },
+      "tips": ["Recuerda cut/cut/cut.", "Verbo de tres partes, inseparable.", "Gerundio 'cutting' con doble 't'."]
+    },
+    "do_away_with": {
+      "base_verb": "do",
+      "particle": "away with",
+      "phrasal_verb": "do away with",
+      "present_third": "does away with",
+      "past": "did away with",
+      "past_participle": "done away with",
+      "gerund": "doing away with",
+      "spanish": "eliminar, abolir, deshacerse de",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'do'. He/She/It: 'does away with'.",
+          "example_sentence": "The school does away with uniforms.",
+          "example_translation_es": "La escuela elimina los uniformes."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'do' ('did'). Pasado: 'did away with'.",
+          "example_sentence": "They did away with the old system.",
+          "example_translation_es": "Eliminaron el viejo sistema."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'do' ('done'). Participio: 'done away with'.",
+           "example_sentence": "Slavery was done away with long ago.",
+           "example_translation_es": "La esclavitud fue abolida hace mucho tiempo."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'do away with'.",
+          "example_sentence": "We should do away with these useless rules.",
+          "example_translation_es": "Deberíamos eliminar estas reglas inútiles."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'doing away with'.",
+          "example_sentence": "Are they doing away with the free lunches?",
+          "example_translation_es": "¿Van a eliminar los almuerzos gratis?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'done away with'.",
+          "example_sentence": "Many traditions have been done away with.",
+          "example_translation_es": "Muchas tradiciones han sido eliminadas."
+        }
+      },
+      "tips": ["Recuerda do/did/done.", "Verbo de tres partes, inseparable."]
+    },
+     "face_up_to": {
+      "base_verb": "face",
+      "particle": "up to",
+      "phrasal_verb": "face up to",
+      "present_third": "faces up to",
+      "past": "faced up to",
+      "past_participle": "faced up to",
+      "gerund": "facing up to",
+      "spanish": "afrontar, aceptar (una realidad desagradable)",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'face' (regular). He/She/It: 'faces up to'.",
+          "example_sentence": "You need to face up to your responsibilities.",
+          "example_translation_es": "Necesitas afrontar tus responsabilidades."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'face' ('faced'). Pasado: 'faced up to'.",
+          "example_sentence": "He finally faced up to the truth.",
+          "example_translation_es": "Finalmente afrontó la verdad."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'face' ('faced'). Participio: 'faced up to'.",
+           "example_sentence": "Have you faced up to the consequences?",
+           "example_translation_es": "¿Has afrontado las consecuencias?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'face up to'.",
+          "example_sentence": "She will have to face up to reality.",
+          "example_translation_es": "Tendrá que afrontar la realidad."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'facing up to'.",
+          "example_sentence": "He is facing up to his problems.",
+          "example_translation_es": "Está afrontando sus problemas."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'faced up to'.",
+          "example_sentence": "They haven't faced up to the challenges yet.",
+          "example_translation_es": "Todavía no han afrontado los desafíos."
+        }
+      },
+      "tips": ["Verbo base 'face' es regular.", "Verbo de tres partes, inseparable."]
+    },
+    "get_away_with": {
+      "base_verb": "get",
+      "particle": "away with",
+      "phrasal_verb": "get away with",
+      "present_third": "gets away with",
+      "past": "got away with",
+      "past_participle": "got away with / gotten away with",
+      "gerund": "getting away with",
+      "spanish": "salirse con la suya, librarse de castigo por",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'get'. He/She/It: 'gets away with'.",
+          "example_sentence": "He always gets away with cheating.",
+          "example_translation_es": "Siempre se sale con la suya haciendo trampas."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'get' ('got'). Pasado: 'got away with'.",
+          "example_sentence": "She got away with a small fine.",
+          "example_translation_es": "Se libró con una pequeña multa."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'get' ('got/gotten'). Participio: 'got/gotten away with'.",
+           "example_sentence": "He has gotten away with murder (figurado).",
+           "example_translation_es": "Se ha salido con la suya con algo muy grave."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'get away with'.",
+          "example_sentence": "You won't get away with this!",
+          "example_translation_es": "¡No te saldrás con la tuya!"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'getting away with'.",
+          "example_sentence": "How is he getting away with it?",
+          "example_translation_es": "¿Cómo se está saliendo con la suya?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'got/gotten away with'.",
+          "example_sentence": "They have gotten away with lying for too long.",
+          "example_translation_es": "Se han salido con la suya mintiendo durante demasiado tiempo."
+        }
+      },
+      "tips": ["Recuerda get/got/got(ten).", "Verbo de tres partes, inseparable."]
+    },
+    "get_rid_of": {
+      "base_verb": "get",
+      "particle": "rid of",
+      "phrasal_verb": "get rid of",
+      "present_third": "gets rid of",
+      "past": "got rid of",
+      "past_participle": "got rid of / gotten rid of",
+      "gerund": "getting rid of",
+      "spanish": "deshacerse de",
+      "level": "hard_42",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'get'. He/She/It: 'gets rid of'.",
+          "example_sentence": "She gets rid of old clothes.",
+          "example_translation_es": "Ella se deshace de la ropa vieja."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'get' ('got'). Pasado: 'got rid of'.",
+          "example_sentence": "We got rid of the old sofa.",
+          "example_translation_es": "Nos deshicimos del viejo sofá."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'get' ('got/gotten'). Participio: 'got/gotten rid of'.",
+           "example_sentence": "Have you gotten rid of that junk?",
+           "example_translation_es": "¿Te has deshecho de esa chatarra?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'get rid of'.",
+          "example_sentence": "I need to get rid of this headache.",
+          "example_translation_es": "Necesito quitarme este dolor de cabeza."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'getting rid of'.",
+          "example_sentence": "He is getting rid of his car.",
+          "example_translation_es": "Se está deshaciendo de su coche."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'got/gotten rid of'.",
+          "example_sentence": "They have finally gotten rid of the pests.",
+          "example_translation_es": "Finalmente se han deshecho de las plagas."
+        }
+      },
+      "tips": ["Recuerda get/got/got(ten).", "Verbo de tres partes, inseparable."]
+    },
+    "get_round_to": {
+      "base_verb": "get",
+      "particle": "round to / around to",
+      "phrasal_verb": "get round to / get around to",
+      "present_third": "gets round to / gets around to",
+      "past": "got round to / got around to",
+      "past_participle": "got round to / gotten round to / got around to / gotten around to",
+      "gerund": "getting round to / getting around to",
+      "spanish": "encontrar tiempo para, ponerse a hacer (algo pospuesto)",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'get'. He/She/It: 'gets round to'. Seguido de gerundio (-ing).",
+          "example_sentence": "He never gets round to fixing it.",
+          "example_translation_es": "Nunca encuentra tiempo para arreglarlo."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'get' ('got'). Pasado: 'got round to'.",
+          "example_sentence": "I finally got round to calling her.",
+          "example_translation_es": "Finalmente encontré tiempo para llamarla."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'get' ('got/gotten'). Participio: 'got/gotten round to'.",
+           "example_sentence": "Have you gotten round to reading that book?",
+           "example_translation_es": "¿Has encontrado tiempo para leer ese libro?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'get round to'.",
+          "example_sentence": "I will get round to it eventually.",
+          "example_translation_es": "Me pondré a ello finalmente."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'getting round to'.",
+          "example_sentence": "I'm getting round to cleaning the garage.",
+          "example_translation_es": "Estoy encontrando tiempo para limpiar el garaje."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'got/gotten round to'.",
+          "example_sentence": "She hasn't gotten around to replying yet.",
+          "example_translation_es": "Todavía no ha encontrado tiempo para responder."
+        }
+      },
+      "tips": ["Recuerda get/got/got(ten).", "Verbo de tres partes, inseparable.", "Siempre seguido de gerundio (-ing) o sustantivo."]
+    },
+    "go_back_on": {
+      "base_verb": "go",
+      "particle": "back on",
+      "phrasal_verb": "go back on",
+      "present_third": "goes back on",
+      "past": "went back on",
+      "past_participle": "gone back on",
+      "gerund": "going back on",
+      "spanish": "romper (promesa), retractarse de",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "communication",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'go'. He/She/It: 'goes back on'.",
+          "example_sentence": "He never goes back on his word.",
+          "example_translation_es": "Él nunca rompe su palabra."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'go' ('went'). Pasado: 'went back on'.",
+          "example_sentence": "She went back on her promise.",
+          "example_translation_es": "Ella rompió su promesa."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'go' ('gone'). Participio: 'gone back on'.",
+           "example_sentence": "Have they gone back on the agreement?",
+           "example_translation_es": "¿Se han retractado del acuerdo?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'go back on'.",
+          "example_sentence": "I hope you won't go back on your offer.",
+          "example_translation_es": "Espero que no te retractes de tu oferta."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'going back on'.",
+          "example_sentence": "Are you going back on what you said?",
+          "example_translation_es": "¿Te estás retractando de lo que dijiste?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'gone back on'.",
+          "example_sentence": "He has gone back on his commitment.",
+          "example_translation_es": "Ha roto su compromiso."
+        }
+      },
+      "tips": ["Recuerda go/went/gone.", "Verbo de tres partes, inseparable."]
+    },
+     "go_in_for": {
+      "base_verb": "go",
+      "particle": "in for",
+      "phrasal_verb": "go in for",
+      "present_third": "goes in for",
+      "past": "went in for",
+      "past_participle": "gone in for",
+      "gerund": "going in for",
+      "spanish": "participar en (competición), tener como hobby, gustar",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'go'. He/She/It: 'goes in for'.",
+          "example_sentence": "She goes in for tennis.",
+          "example_translation_es": "A ella le gusta / practica tenis."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'go' ('went'). Pasado: 'went in for'.",
+          "example_sentence": "He went in for the competition.",
+          "example_translation_es": "Participó en la competición."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'go' ('gone'). Participio: 'gone in for'.",
+           "example_sentence": "Have you gone in for the marathon?",
+           "example_translation_es": "¿Te has inscrito en la maratón?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'go in for'.",
+          "example_sentence": "I don't really go in for modern art.",
+          "example_translation_es": "Realmente no me gusta el arte moderno."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'going in for'.",
+          "example_sentence": "Are you going in for the exam?",
+          "example_translation_es": "¿Vas a presentarte al examen?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'gone in for'.",
+          "example_sentence": "He has gone in for painting recently.",
+          "example_translation_es": "Le ha dado por la pintura recientemente."
+        }
+      },
+      "tips": ["Recuerda go/went/gone.", "Verbo de tres partes, inseparable."]
+    },
+     "keep_up_with": {
+      "base_verb": "keep",
+      "particle": "up with",
+      "phrasal_verb": "keep up with",
+      "present_third": "keeps up with",
+      "past": "kept up with",
+      "past_participle": "kept up with",
+      "gerund": "keeping up with",
+      "spanish": "mantenerse al día con, seguir el ritmo de",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'keep'. He/She/It: 'keeps up with'.",
+          "example_sentence": "It's hard to keep up with technology.",
+          "example_translation_es": "Es difícil mantenerse al día con la tecnología."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'keep' ('kept'). Pasado: 'kept up with'.",
+          "example_sentence": "She couldn't keep up with the faster runners.",
+          "example_translation_es": "No pudo seguir el ritmo de los corredores más rápidos."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'keep' ('kept'). Participio: 'kept up with'.",
+           "example_sentence": "Have you kept up with the news?",
+           "example_translation_es": "¿Te has mantenido al día con las noticias?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'keep up with'.",
+          "example_sentence": "Try to keep up with the group.",
+          "example_translation_es": "Intenta seguir el ritmo del grupo."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'keeping up with'.",
+          "example_sentence": "I'm having trouble keeping up with the payments.",
+          "example_translation_es": "Estoy teniendo problemas para mantenerme al día con los pagos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'kept up with'.",
+          "example_sentence": "He hasn't kept up with his old friends.",
+          "example_translation_es": "No ha mantenido el contacto con sus viejos amigos."
+        }
+      },
+      "tips": ["Recuerda keep/kept/kept.", "Verbo de tres partes, inseparable."]
+    },
+     "look_down_on": {
+      "base_verb": "look",
+      "particle": "down on",
+      "phrasal_verb": "look down on",
+      "present_third": "looks down on",
+      "past": "looked down on",
+      "past_participle": "looked down on",
+      "gerund": "looking down on",
+      "spanish": "menospreciar, mirar por encima del hombro",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "communication",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'look'. He/She/It: 'looks down on'.",
+          "example_sentence": "She looks down on people with less money.",
+          "example_translation_es": "Ella menosprecia a la gente con menos dinero."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'look' ('looked'). Pasado: 'looked down on'.",
+          "example_sentence": "He felt they looked down on him.",
+          "example_translation_es": "Sintió que lo menospreciaban."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'look' ('looked'). Participio: 'looked down on'.",
+           "example_sentence": "She has always been looked down on.",
+           "example_translation_es": "Siempre ha sido menospreciada."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'look down on'.",
+          "example_sentence": "You shouldn't look down on anyone.",
+          "example_translation_es": "No deberías menospreciar a nadie."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'looking down on'.",
+          "example_sentence": "Why are you looking down on my choices?",
+          "example_translation_es": "¿Por qué menosprecias mis elecciones?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'looked down on'.",
+          "example_sentence": "They have looked down on us for years.",
+          "example_translation_es": "Nos han menospreciado durante años."
+        }
+      },
+      "tips": ["Verbo base 'look' es regular.", "Verbo de tres partes, inseparable.", "Opuesto a 'look up to'."]
+    },
+    "look_out_for": {
+      "base_verb": "look",
+      "particle": "out for",
+      "phrasal_verb": "look out for",
+      "present_third": "looks out for",
+      "past": "looked out for",
+      "past_participle": "looked out for",
+      "gerund": "looking out for",
+      "spanish": "estar atento a, cuidar de, buscar (intereses de alguien)",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'look'. He/She/It: 'looks out for'.",
+          "example_sentence": "Look out for pickpockets.",
+          "example_translation_es": "Esté atento a los carteristas."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'look' ('looked'). Pasado: 'looked out for'.",
+          "example_sentence": "Her older brother always looked out for her.",
+          "example_translation_es": "Su hermano mayor siempre la cuidaba."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'look' ('looked'). Participio: 'looked out for'.",
+           "example_sentence": "Have you looked out for any warning signs?",
+           "example_translation_es": "¿Has estado atento a alguna señal de advertencia?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'look out for'.",
+          "example_sentence": "I will look out for your email.",
+          "example_translation_es": "Estaré atento a tu correo electrónico."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'looking out for'.",
+          "example_sentence": "He is looking out for his own interests.",
+          "example_translation_es": "Está buscando sus propios intereses."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'looked out for'.",
+          "example_sentence": "She has always looked out for me.",
+          "example_translation_es": "Ella siempre me ha cuidado."
+        }
+      },
+      "tips": ["Verbo base 'look' es regular.", "Verbo de tres partes, inseparable."]
+    },
+    "look_up_to": {
+      "base_verb": "look",
+      "particle": "up to",
+      "phrasal_verb": "look up to",
+      "present_third": "looks up to",
+      "past": "looked up to",
+      "past_participle": "looked up to",
+      "gerund": "looking up to",
+      "spanish": "admirar, respetar",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "feelings",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'look'. He/She/It: 'looks up to'.",
+          "example_sentence": "He looks up to his father.",
+          "example_translation_es": "Él admira a su padre."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'look' ('looked'). Pasado: 'looked up to'.",
+          "example_sentence": "She looked up to her teacher.",
+          "example_translation_es": "Ella admiraba a su profesora."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'look' ('looked'). Participio: 'looked up to'.",
+           "example_sentence": "He has always been looked up to.",
+           "example_translation_es": "Siempre ha sido admirado."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'look up to'.",
+          "example_sentence": "Children need role models to look up to.",
+          "example_translation_es": "Los niños necesitan modelos a seguir a quienes admirar."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'looking up to'.",
+          "example_sentence": "Who are you looking up to these days?",
+          "example_translation_es": "¿A quién admiras estos días?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'looked up to'.",
+          "example_sentence": "I have always looked up to her.",
+          "example_translation_es": "Siempre la he admirado."
+        }
+      },
+      "tips": ["Verbo base 'look' es regular.", "Verbo de tres partes, inseparable.", "Opuesto a 'look down on'."]
+    },
+     "make_up_for": {
+      "base_verb": "make",
+      "particle": "up for",
+      "phrasal_verb": "make up for",
+      "present_third": "makes up for",
+      "past": "made up for",
+      "past_participle": "made up for",
+      "gerund": "making up for",
+      "spanish": "compensar (por algo malo)",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "actions",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'make'. He/She/It: 'makes up for'.",
+          "example_sentence": "His enthusiasm makes up for his lack of experience.",
+          "example_translation_es": "Su entusiasmo compensa su falta de experiencia."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'make' ('made'). Pasado: 'made up for'.",
+          "example_sentence": "He bought her flowers to make up for being late.",
+          "example_translation_es": "Le compró flores para compensar por llegar tarde."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'make' ('made'). Participio: 'made up for'.",
+           "example_sentence": "Has he made up for his mistake?",
+           "example_translation_es": "¿Ha compensado su error?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'make up for'.",
+          "example_sentence": "How can I make up for it?",
+          "example_translation_es": "¿Cómo puedo compensarlo?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'making up for'.",
+          "example_sentence": "I'm making up for lost time.",
+          "example_translation_es": "Estoy recuperando (compensando) el tiempo perdido."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'made up for'.",
+          "example_sentence": "The beautiful view has made up for the bad weather.",
+          "example_translation_es": "La hermosa vista ha compensado el mal tiempo."
+        }
+      },
+      "tips": ["Recuerda make/made/made.", "Verbo de tres partes, inseparable."]
+    },
+     "run_out_of": {
+      "base_verb": "run",
+      "particle": "out of",
+      "phrasal_verb": "run out of",
+      "present_third": "runs out of",
+      "past": "ran out of",
+      "past_participle": "run out of",
+      "gerund": "running out of",
+      "spanish": "quedarse sin (algo específico)",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "state",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'run'. He/She/It: 'runs out of'.",
+          "example_sentence": "He often runs out of ideas.",
+          "example_translation_es": "A menudo se queda sin ideas."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'run' ('ran'). Pasado: 'ran out of'.",
+          "example_sentence": "We ran out of sugar.",
+          "example_translation_es": "Nos quedamos sin azúcar."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'run' ('run'). Participio: 'run out of'.",
+           "example_sentence": "Have we run out of bread?",
+           "example_translation_es": "¿Nos hemos quedado sin pan?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'run out of'.",
+          "example_sentence": "We will run out of time if we don't hurry.",
+          "example_translation_es": "Nos quedaremos sin tiempo si no nos damos prisa."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'running out of' (doble 'n').",
+          "example_sentence": "The car is running out of fuel.",
+          "example_translation_es": "El coche se está quedando sin combustible."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'run out of'.",
+          "example_sentence": "I'm afraid we have run out of options.",
+          "example_translation_es": "Me temo que nos hemos quedado sin opciones."
+        }
+      },
+      "tips": ["Recuerda run/ran/run.", "Verbo de tres partes, inseparable.", "Gerundio 'running' con doble 'n'."]
+    },
+    "stand_up_for": {
+      "base_verb": "stand",
+      "particle": "up for",
+      "phrasal_verb": "stand up for",
+      "present_third": "stands up for",
+      "past": "stood up for",
+      "past_participle": "stood up for",
+      "gerund": "standing up for",
+      "spanish": "defender (a alguien, una idea)",
+      "level": "hard_43",
+      "difficulty": "phrasal",
+      "category": "communication",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'stand'. He/She/It: 'stands up for'.",
+          "example_sentence": "She always stands up for what she believes in.",
+          "example_translation_es": "Ella siempre defiende aquello en lo que cree."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'stand' ('stood'). Pasado: 'stood up for'.",
+          "example_sentence": "He stood up for his friend.",
+          "example_translation_es": "Defendió a su amigo."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'stand' ('stood'). Participio: 'stood up for'.",
+           "example_sentence": "Have you always stood up for your principles?",
+           "example_translation_es": "¿Siempre has defendido tus principios?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'stand up for'.",
+          "example_sentence": "You must stand up for yourself.",
+          "example_translation_es": "Debes defenderte a ti mismo."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'standing up for'.",
+          "example_sentence": "They are standing up for human rights.",
+          "example_translation_es": "Están defendiendo los derechos humanos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'stood up for'.",
+          "example_sentence": "She has stood up for the voiceless.",
+          "example_translation_es": "Ha defendido a los que no tienen voz."
+        }
+      },
+      "tips": ["Recuerda stand/stood/stood.", "Verbo de tres partes, inseparable."]
+    },
+    "take_on": {
+      "base_verb": "take",
+      "particle": "on",
+      "phrasal_verb": "take on",
+      "present_third": "takes on",
+      "past": "took on",
+      "past_participle": "taken on",
+      "gerund": "taking on",
+      "spanish": "contratar (empleado), aceptar (responsabilidad, desafío), enfrentarse a",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'take'. He/She/It: 'takes on'.",
+          "example_sentence": "The company takes on new staff.",
+          "example_translation_es": "La empresa contrata nuevo personal."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'take' ('took'). Pasado: 'took on'.",
+          "example_sentence": "She took on the challenge. / We took on too much work.",
+          "example_translation_es": "Aceptó el desafío. / Aceptamos demasiado trabajo."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'take' ('taken'). Participio: 'taken on'.",
+           "example_sentence": "Have you taken on extra responsibilities? / He was taken on as an assistant.",
+           "example_translation_es": "¿Has aceptado responsabilidades extra? / Fue contratado como asistente."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'take on'.",
+          "example_sentence": "I can't take on any more projects.",
+          "example_translation_es": "No puedo aceptar más proyectos."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'taking on'.",
+          "example_sentence": "Are you taking on new clients?",
+          "example_translation_es": "¿Estás aceptando nuevos clientes?"
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'taken on'.",
+          "example_sentence": "The ship has taken on water (está haciendo agua).",
+          "example_translation_es": "El barco está haciendo agua."
+        }
+      },
+      "tips": ["Recuerda take/took/taken.", "Separable."]
+    },
+    "burn_out": {
+      "base_verb": "burn",
+      "particle": "out",
+      "phrasal_verb": "burn out",
+      "present_third": "burns out",
+      "past": "burnt out / burned out",
+      "past_participle": "burnt out / burned out",
+      "gerund": "burning out",
+      "spanish": "agotarse (por exceso de trabajo), quemarse (hasta consumirse)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'burn'. He/She/It: 'burns out'.",
+          "example_sentence": "If you work too hard, you'll burn out.",
+          "example_translation_es": "Si trabajas demasiado duro, te agotarás."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'burn' ('burnt/burned'). Pasado: 'burnt/burned out'.",
+          "example_sentence": "The candle burnt out. / She burned out after years of stress.",
+          "example_translation_es": "La vela se consumió. / Ella se agotó tras años de estrés."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'burn' ('burnt/burned'). Participio: 'burnt/burned out'.",
+           "example_sentence": "The fire has burned out. / He feels completely burnt out.",
+           "example_translation_es": "El fuego se ha consumido. / Se siente completamente agotado."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'burn out'.",
+          "example_sentence": "The lightbulb will burn out eventually.",
+          "example_translation_es": "La bombilla se fundirá finalmente."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'burning out'.",
+          "example_sentence": "I think I'm burning out.",
+          "example_translation_es": "Creo que me estoy agotando."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'burnt/burned out'.",
+          "example_sentence": "Many teachers have burned out.",
+          "example_translation_es": "Muchos profesores se han agotado."
+        }
+      },
+      "tips": ["'Burn' puede ser regular (burned) o irregular (burnt). Ambas formas son comunes.", "Inseparable."]
+    },
+    "fill_in_for": {
+      "base_verb": "fill",
+      "particle": "in for",
+      "phrasal_verb": "fill in for",
+      "present_third": "fills in for",
+      "past": "filled in for",
+      "past_participle": "filled in for",
+      "gerund": "filling in for",
+      "spanish": "sustituir a (alguien temporalmente)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable (3-part)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'fill'. He/She/It: 'fills in for'.",
+          "example_sentence": "She fills in for her boss when he's away.",
+          "example_translation_es": "Ella sustituye a su jefe cuando él está fuera."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'fill' ('filled'). Pasado: 'filled in for'.",
+          "example_sentence": "I filled in for Sarah yesterday.",
+          "example_translation_es": "Sustituí a Sarah ayer."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'fill' ('filled'). Participio: 'filled in for'.",
+           "example_sentence": "Have you ever filled in for a colleague?",
+           "example_translation_es": "¿Alguna vez has sustituido a un colega?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'fill in for'.",
+          "example_sentence": "Who will fill in for you while you're on leave?",
+          "example_translation_es": "¿Quién te sustituirá mientras estás de baja?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'filling in for'.",
+          "example_sentence": "He is filling in for the receptionist.",
+          "example_translation_es": "Él está sustituyendo a la recepcionista."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'filled in for'.",
+          "example_sentence": "She has filled in for me several times.",
+          "example_translation_es": "Ella me ha sustituido varias veces."
+        }
+      },
+      "tips": ["Verbo base 'fill' es regular.", "Verbo de tres partes, inseparable."]
+    },
+     "lay_off": {
+      "base_verb": "lay",
+      "particle": "off",
+      "phrasal_verb": "lay off",
+      "present_third": "lays off",
+      "past": "laid off",
+      "past_participle": "laid off",
+      "gerund": "laying off",
+      "spanish": "despedir (trabajadores, por falta de trabajo)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "separable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'lay'. He/She/It: 'lays off'.",
+          "example_sentence": "The company lays off workers during recessions.",
+          "example_translation_es": "La empresa despide trabajadores durante las recesiones."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'lay' ('laid'). Pasado: 'laid off'.",
+          "example_sentence": "They laid off 100 employees. / Many people were laid off.",
+          "example_translation_es": "Despidieron a 100 empleados. / Mucha gente fue despedida."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'lay' ('laid'). Participio: 'laid off'.",
+           "example_sentence": "Have they laid off more staff? / He has been laid off.",
+           "example_translation_es": "¿Han despedido a más personal? / Ha sido despedido."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'lay off'.",
+          "example_sentence": "Will they lay off anyone else?",
+          "example_translation_es": "¿Despedirán a alguien más?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'laying off'.",
+          "example_sentence": "The factory is laying off workers.",
+          "example_translation_es": "La fábrica está despidiendo trabajadores."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'laid off'.",
+          "example_sentence": "Thousands have been laid off.",
+          "example_translation_es": "Miles han sido despedidos."
+        }
+      },
+      "tips": ["Recuerda lay/laid/laid.", "Separable.", "Se refiere a despidos por razones económicas, no por mal desempeño ('fire')."]
+    },
+    "knuckle_down": {
+      "base_verb": "knuckle",
+      "particle": "down",
+      "phrasal_verb": "knuckle down",
+      "present_third": "knuckles down",
+      "past": "knuckled down",
+      "past_participle": "knuckled down",
+      "gerund": "knuckling down",
+      "spanish": "ponerse a trabajar duro, aplicarse",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'knuckle' (regular). He/She/It: 'knuckles down'.",
+          "example_sentence": "You need to knuckle down if you want to pass.",
+          "example_translation_es": "Necesitas aplicarte si quieres aprobar."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'knuckle' ('knuckled'). Pasado: 'knuckled down'.",
+          "example_sentence": "He knuckled down and finished the project.",
+          "example_translation_es": "Se puso a trabajar duro y terminó el proyecto."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'knuckle' ('knuckled'). Participio: 'knuckled down'.",
+           "example_sentence": "She has really knuckled down this semester.",
+           "example_translation_es": "Realmente se ha aplicado este semestre."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'knuckle down'.",
+          "example_sentence": "It's time to knuckle down.",
+          "example_translation_es": "Es hora de ponerse a trabajar duro."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'knuckling down'.",
+          "example_sentence": "He is knuckling down to his studies.",
+          "example_translation_es": "Se está aplicando a sus estudios."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'knuckled down'.",
+          "example_sentence": "We've all knuckled down to meet the deadline.",
+          "example_translation_es": "Todos nos hemos aplicado para cumplir el plazo."
+        }
+      },
+      "tips": ["Verbo base 'knuckle' es regular.", "Inseparable."]
+    },
+    "step_down": {
+      "base_verb": "step",
+      "particle": "down",
+      "phrasal_verb": "step down",
+      "present_third": "steps down",
+      "past": "stepped down",
+      "past_participle": "stepped down",
+      "gerund": "stepping down",
+      "spanish": "dimitir, renunciar (a un cargo)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'step' (regular, duplica 'p'). He/She/It: 'steps down'.",
+          "example_sentence": "The chairman steps down next year.",
+          "example_translation_es": "El presidente dimite el año que viene."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'step' ('stepped'). Pasado: 'stepped down'.",
+          "example_sentence": "He stepped down as CEO.",
+          "example_translation_es": "Dimitió como CEO."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'step' ('stepped'). Participio: 'stepped down'.",
+           "example_sentence": "She has stepped down from her position.",
+           "example_translation_es": "Ha renunciado a su puesto."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'step down'.",
+          "example_sentence": "Will he step down voluntarily?",
+          "example_translation_es": "¿Dimitirá voluntariamente?"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'stepping down' (doble 'p').",
+          "example_sentence": "The director is stepping down.",
+          "example_translation_es": "El director va a dimitir."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'stepped down'.",
+          "example_sentence": "Several board members have stepped down.",
+          "example_translation_es": "Varios miembros de la junta han dimitido."
+        }
+      },
+      "tips": ["Verbo base 'step' es regular, pero duplica 'p' (stepped, stepping).", "Inseparable.", "Similar a 'resign'."]
+    },
+    "call_in": {
+      "base_verb": "call",
+      "particle": "in",
+      "phrasal_verb": "call in",
+      "present_third": "calls in",
+      "past": "called in",
+      "past_participle": "called in",
+      "gerund": "calling in",
+      "spanish": "llamar (a un experto), llamar (a radio/TV), llamar para decir que no vas a trabajar (enfermo)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "separable (llamar experto), inseparable (radio/TV/enfermo)",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'call'. He/She/It: 'calls in'.",
+          "example_sentence": "He often calls in sick on Mondays.",
+          "example_translation_es": "A menudo llama (al trabajo) diciendo que está enfermo los lunes."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'call' ('called'). Pasado: 'called in'.",
+          "example_sentence": "She called in a plumber. / He called in to the radio show.",
+          "example_translation_es": "Llamó a un fontanero. / Llamó al programa de radio."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'call' ('called'). Participio: 'called in'.",
+           "example_sentence": "Have you called in the IT specialist? / Several listeners have called in.",
+           "example_translation_es": "¿Has llamado al especialista de TI? / Varios oyentes han llamado."
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'call in'.",
+          "example_sentence": "I'll have to call in sick tomorrow.",
+          "example_translation_es": "Tendré que llamar (al trabajo) diciendo que estoy enfermo mañana."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'calling in'.",
+          "example_sentence": "They are calling in reinforcements.",
+          "example_translation_es": "Están llamando refuerzos."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'called in'.",
+          "example_sentence": "She has called in sick three times this month.",
+          "example_translation_es": "Ha llamado diciendo que estaba enferma tres veces este mes."
+        }
+      },
+      "tips": ["Verbo base 'call' es regular.", "Múltiples significados.", "'Call in sick' es una expresión fija."]
+    },
+    "clock_in": {
+      "base_verb": "clock",
+      "particle": "in / on",
+      "phrasal_verb": "clock in / clock on",
+      "present_third": "clocks in / clocks on",
+      "past": "clocked in / clocked on",
+      "past_participle": "clocked in / clocked on",
+      "gerund": "clocking in / clocking on",
+      "spanish": "fichar (al entrar al trabajo)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'clock' (regular). He/She/It: 'clocks in'.",
+          "example_sentence": "She clocks in at 9 AM sharp.",
+          "example_translation_es": "Ella ficha a las 9 AM en punto."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'clock' ('clocked'). Pasado: 'clocked in'.",
+          "example_sentence": "He clocked in late today.",
+          "example_translation_es": "Fichó tarde hoy."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'clock' ('clocked'). Participio: 'clocked in'.",
+           "example_sentence": "Have you clocked in yet?",
+           "example_translation_es": "¿Has fichado ya?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'clock in'.",
+          "example_sentence": "Remember to clock in when you arrive.",
+          "example_translation_es": "Recuerda fichar cuando llegues."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'clocking in'.",
+          "example_sentence": "The night shift is clocking in now.",
+          "example_translation_es": "El turno de noche está fichando ahora."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'clocked in'.",
+          "example_sentence": "Everyone has clocked in.",
+          "example_translation_es": "Todo el mundo ha fichado."
+        }
+      },
+      "tips": ["Verbo base 'clock' es regular.", "Inseparable.", "Opuesto a 'clock out/off'."]
+    },
+    "clock_out": {
+      "base_verb": "clock",
+      "particle": "out / off",
+      "phrasal_verb": "clock out / clock off",
+      "present_third": "clocks out / clocks off",
+      "past": "clocked out / clocked off",
+      "past_participle": "clocked out / clocked off",
+      "gerund": "clocking out / clocking off",
+      "spanish": "fichar (al salir del trabajo)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'clock'. He/She/It: 'clocks out'.",
+          "example_sentence": "She clocks out at 5 PM.",
+          "example_translation_es": "Ella ficha (al salir) a las 5 PM."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'clock' ('clocked'). Pasado: 'clocked out'.",
+          "example_sentence": "He clocked off early.",
+          "example_translation_es": "Fichó (al salir) temprano."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'clock' ('clocked'). Participio: 'clocked out'.",
+           "example_sentence": "Have you clocked out?",
+           "example_translation_es": "¿Has fichado (al salir)?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'clock out'.",
+          "example_sentence": "Don't forget to clock out.",
+          "example_translation_es": "No olvides fichar al salir."
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'clocking out'.",
+          "example_sentence": "The day shift is clocking out.",
+          "example_translation_es": "El turno de día está fichando (al salir)."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'clocked out'.",
+          "example_sentence": "Everyone has clocked out for the day.",
+          "example_translation_es": "Todo el mundo ha fichado (al salir) por hoy."
+        }
+      },
+      "tips": ["Verbo base 'clock' es regular.", "Inseparable.", "Opuesto a 'clock in/on'."]
+    },
+     "slack_off": {
+      "base_verb": "slack",
+      "particle": "off",
+      "phrasal_verb": "slack off",
+      "present_third": "slacks off",
+      "past": "slacked off",
+      "past_participle": "slacked off",
+      "gerund": "slacking off",
+      "spanish": "flojear, vaguear (en trabajo/estudios)",
+      "level": "hard_44",
+      "difficulty": "phrasal",
+      "category": "work",
+      "separability": "inseparable",
+      "tense_info": {
+        "present_simple": {
+          "formation_rule_es": "Se conjuga 'slack' (regular). He/She/It: 'slacks off'.",
+          "example_sentence": "He slacks off when the boss isn't looking.",
+          "example_translation_es": "Él vaguea cuando el jefe no mira."
+        },
+        "past_simple": {
+          "formation_rule_es": "Se usa el pasado de 'slack' ('slacked'). Pasado: 'slacked off'.",
+          "example_sentence": "She slacked off during the last month.",
+          "example_translation_es": "Ella flojeó durante el último mes."
+        },
+        "past_participle":{
+           "formation_rule_es": "Se usa el participio de 'slack' ('slacked'). Participio: 'slacked off'.",
+           "example_sentence": "Have you been slacking off?",
+           "example_translation_es": "¿Has estado vagueando?"
+        },
+        "future_simple": {
+          "formation_rule_es": "Se usa 'will' + 'slack off'.",
+          "example_sentence": "Don't slack off!",
+          "example_translation_es": "¡No vaguees!"
+        },
+        "present_continuous": {
+          "formation_rule_es": "Se usa am/is/are + 'slacking off'.",
+          "example_sentence": "He is slacking off again.",
+          "example_translation_es": "Está vagueando otra vez."
+        },
+         "present_perfect": {
+          "formation_rule_es": "Usa has/have + 'slacked off'.",
+          "example_sentence": "She feels she has slacked off too much.",
+          "example_translation_es": "Siente que ha vagueado demasiado."
+        }
+      },
+      "tips": ["Verbo base 'slack' es regular.", "Inseparable.", "Informal."]
+    },
     
   },
   "game_content": {
